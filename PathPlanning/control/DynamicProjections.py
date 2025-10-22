@@ -1,8 +1,6 @@
 import numpy as np
 from typing import Tuple, Optional, List
-
 from core import DroneState
-
 
 class DynamicProjections:
     def __init__(self, gravity: float = 9.81,
