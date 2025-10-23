@@ -28,7 +28,7 @@ class DroneState:
     def speed(self) -> float:
         return np.linalg.norm(self.velocity())
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict:  
         return {
             'mass': self.mass,
             'position': {'x': self.x, 'y': self.y, 'z': self.z},
