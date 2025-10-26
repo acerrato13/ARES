@@ -47,11 +47,11 @@ class NRHDGConfig:
 
     # Weights for our object function
     # chosen arbitrarily tune later
-    w_progress: float = 1.0
-    w_deviation: float = 0.5
-    w_control: float = 0.1 
+    w_progress: float = 1.0 # Higher it priorities progress along path
+    w_deviation: float = 0.5 # higher it punishes deviation off the path
+    w_control: float = 0.1  # Higher higher changes is control (thrust)
 
     # TODO: make these make sense
-    max_thrust: float = 20.0 
-    mass: float = 5.0
+    max_thrust: float = 100.0
+    mass: float = 0.5
     drag_coeff: float = 0.0
