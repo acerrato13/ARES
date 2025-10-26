@@ -14,6 +14,8 @@ class DroneState:
     ax: float
     ay: float
     az: float
+    theta: float # Path parameter
+    theta_dot: float # rate of progress along path
     timestamp: float = 0.0
 
     def position(self) -> np.ndarray:
@@ -36,4 +38,20 @@ class DroneState:
             'acceleration': {'ax': self.ax, 'ay': self.ay, 'az': self.az},
             'timestamp': self.timestamp
         }
-    
+
+@dataclass
+class NRHDGConfig:
+    T: float = 1.0  # receding horizon time
+    dt: float = 0.1 # time step
+    n_steps: int = 10 # num of discretization steps
+
+    # Weights for our object function
+    # chosen arbitrarily tune later
+    w_progress: float = 1.0 # Higher it priorities progress along path
+    w_deviation: float = 0.5 # higher it punishes deviation off the path
+    w_control: float = 0.1  # Higher higher changes is control (thrust)
+
+    # TODO: make these make sense
+    max_thrust: float = 100.0
+    mass: float = 0.5
+    drag_coeff: float = 0.0
