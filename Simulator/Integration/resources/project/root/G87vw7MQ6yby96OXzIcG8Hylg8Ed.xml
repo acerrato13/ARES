@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info BLOCKSET_DOC_HTML="common/doc/help_Path_Planning_Functions.html" BLOCKSET_DOC_SCRIPT="common/doc/help_Path_Planning_Functions.mlx" BLOCKSET_LIBRARY="common/library/Path_Planning_Functions.slx" BLOCKSET_ROOT_SCRIPT="common\script\blocksetroot.m" BLOCKSET_SCRIPT="common/library/slblocks.m" sublibraryList="sublibrary_81f38709-d481-4578-a915-bb48f3344df4">
+    <Info BUILD_CHECKBOX="  " DOCUMENT_CHECKBOX="  " DocScript="  " IsRoot="true" LibDesc="  " LibName="Path_Planning_Functions" LibPath="  " OpenFunction="Path_Planning_Functions" ParentLibPath="  " TEST_CHECKBOX="  " blockId="sublibrary_81f38709-d481-4578-a915-bb48f3344df4"/>
+</Info>
