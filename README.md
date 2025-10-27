@@ -10,7 +10,7 @@ ARES (Autonomous Robotic Exploration System) is a comprehensive drone path plann
 Code/
 ├── Path Planning/           # Main path planning module
 │   ├── main.py             # Main execution script
-│   ├── functions-anu.py    # Utility functions
+│   ├── functions_anu.py    # Utility functions
 │   ├── core/               # Core data structures
 │   │   ├── __init__.py
 │   │   └── State.py        # DroneState class definition

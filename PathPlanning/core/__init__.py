@@ -3,6 +3,7 @@ from .State import DroneState
 
 __all__ = [
     'DroneState',
+    'NRHDGConfig',
 ]
 
 __version__ = '0.1.0'
