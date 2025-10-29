@@ -12,5 +12,5 @@ class NRHDGConfig:
     w_control: float = 0.1
 
     max_thrust: float = 20.0
-    mass: float = 5.0
+    mass: float = 0.0
     drag_coeff: float = 0.0
