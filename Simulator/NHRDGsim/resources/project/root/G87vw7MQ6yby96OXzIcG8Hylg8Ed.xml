@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info BLOCKSET_DOC_HTML="common/doc/help_NRHDG10_29_2025.html" BLOCKSET_DOC_SCRIPT="common/doc/help_NRHDG10_29_2025.mlx" BLOCKSET_LIBRARY="common/library/NRHDG10_29_2025.slx" BLOCKSET_ROOT_SCRIPT="common\script\blocksetroot.m" BLOCKSET_SCRIPT="common/library/slblocks.m" sublibraryList="sublibrary_ed0ab012-4bc7-47c6-b083-ea591e2ffd41">
+    <Info BUILD_CHECKBOX="  " DOCUMENT_CHECKBOX="  " DocScript="  " IsRoot="true" LibDesc="  " LibName="NRHDG10_29_2025" LibPath="  " OpenFunction="NRHDG10_29_2025" ParentLibPath="  " TEST_CHECKBOX="  " blockId="sublibrary_ed0ab012-4bc7-47c6-b083-ea591e2ffd41"/>
+</Info>

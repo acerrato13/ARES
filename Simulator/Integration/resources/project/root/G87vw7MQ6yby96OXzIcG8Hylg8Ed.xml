@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info BLOCKSET_DOC_HTML="common/doc/help_NRHDGFunctions10_29_25.html" BLOCKSET_DOC_SCRIPT="common/doc/help_NRHDGFunctions10_29_25.mlx" BLOCKSET_LIBRARY="common/library/NRHDGFunctions10_29_25.slx" BLOCKSET_ROOT_SCRIPT="common\script\blocksetroot.m" BLOCKSET_SCRIPT="common/library/slblocks.m" sublibraryList="sublibrary_12b4c1a1-a4c3-49c4-9762-f1a6c2068960">
+    <Info BUILD_CHECKBOX="  " DOCUMENT_CHECKBOX="  " DocScript="  " IsRoot="true" LibDesc="  " LibName="NRHDGFunctions10_29_25" LibPath="  " OpenFunction="NRHDGFunctions10_29_25" ParentLibPath="  " TEST_CHECKBOX="  " blockId="sublibrary_12b4c1a1-a4c3-49c4-9762-f1a6c2068960"/>
+</Info>

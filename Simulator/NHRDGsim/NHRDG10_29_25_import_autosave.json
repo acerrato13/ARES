@@ -1,0 +1,507 @@
+{
+  "SimulinkCodeImporterVersion": 1,
+  "LibraryFileName": "NHRDG10_29_25",
+  "OutputFolder": "C:\\Users\\jwjar\\OneDrive\\Desktop\\VAT\\ARES\\Simulator\\NHRDGsim",
+  "CustomCode": {
+    "SourceFiles": ".\\..\\..\\PathPlanning\\nrhdg_agent.py",
+    "GlobalVariableInterface": false
+  },
+  "Options": {
+    "CreateTestHarness": false
+  },
+  "FunctionsToImport": [
+    "nrhdg_agent.objective_u",
+    "nrhdg_agent.objective_v",
+    "nrhdg_agent.NRHDGController2D.compute_control",
+    "nrhdg_agent.NRHDGController2D.compute_objective",
+    "nrhdg_agent.NRHDGController2D.dynamics",
+    "nrhdg_agent.NRHDGController2D.path_derivative",
+    "nrhdg_agent.NRHDGController2D.propagate_state",
+    "nrhdg_agent.NRHDGController2D.solve_saddle_point",
+    "nrhdg_agent.NRHDGController2D.stage_cost",
+    "nrhdg_agent.NRHDGController2D.terminal_cost",
+    "nrhdg_agent.NRHDGController2D.NRHDGController2D"
+  ],
+  "FunctionSettings": [
+    {
+      "Name": "nrhdg_agent.objective_u",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "u",
+          "PortName": "u",
+          "Scope": "Input",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.objective_v",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "v",
+          "PortName": "v",
+          "Scope": "Input",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.NRHDGController2D",
+      "PortSpecArray": [
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "role_switcher",
+          "PortName": "role_switcher",
+          "Scope": "Parameter",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "config",
+          "PortName": "config",
+          "Scope": "Parameter",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.compute_control",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "ego_state",
+          "PortName": "ego_state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "opp_state",
+          "PortName": "opp_state",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.compute_objective",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "ego_state",
+          "PortName": "ego_state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "opp_state",
+          "PortName": "opp_state",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "u_sequence",
+          "PortName": "u_sequence",
+          "Scope": "Input",
+          "Index": "4",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "v_sequence",
+          "PortName": "v_sequence",
+          "Scope": "Input",
+          "Index": "5",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.dynamics",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "state",
+          "PortName": "state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "control",
+          "PortName": "control",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "t",
+          "PortName": "t",
+          "Scope": "Input",
+          "Index": "4",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.path_derivative",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "theta",
+          "PortName": "theta",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.propagate_state",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "state",
+          "PortName": "state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "control",
+          "PortName": "control",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "dt",
+          "PortName": "dt",
+          "Scope": "Input",
+          "Index": "4",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.solve_saddle_point",
+      "PortSpecArray": [
+        {
+          "ArgName": "u_seq",
+          "PortName": "u_seq",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "v_seq",
+          "PortName": "v_seq",
+          "Scope": "Output",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "ego_state",
+          "PortName": "ego_state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "opp_state",
+          "PortName": "opp_state",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.stage_cost",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "ego_state",
+          "PortName": "ego_state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "opp_state",
+          "PortName": "opp_state",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "u_ego",
+          "PortName": "u_ego",
+          "Scope": "Input",
+          "Index": "4",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "u_opp",
+          "PortName": "u_opp",
+          "Scope": "Input",
+          "Index": "5",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "t",
+          "PortName": "t",
+          "Scope": "Input",
+          "Index": "6",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    },
+    {
+      "Name": "nrhdg_agent.NRHDGController2D.terminal_cost",
+      "PortSpecArray": [
+        {
+          "ArgName": "y",
+          "PortName": "y",
+          "Scope": "Output",
+          "Index": "1",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "self",
+          "PortName": "self",
+          "Scope": "Parameter",
+          "Index": "1",
+          "Type": "ClassObject",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "ego_state",
+          "PortName": "ego_state",
+          "Scope": "Input",
+          "Index": "2",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        },
+        {
+          "ArgName": "opp_state",
+          "PortName": "opp_state",
+          "Scope": "Input",
+          "Index": "3",
+          "Type": "double",
+          "Size": "[1 1]",
+          "IsGlobal": false
+        }
+      ],
+      "IsDeterministic": false
+    }
+  ]
+}
