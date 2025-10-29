@@ -4,54 +4,33 @@ from dataclasses import dataclass
 
 @dataclass
 class DroneState:
-    mass: float
     x: float
     y: float
-    z: float
     vx: float
     vy: float
-    vz: float
     ax: float
     ay: float
-    az: float
-    theta: float # Path parameter
-    theta_dot: float # rate of progress along path
+    theta: float
+    theta_dot: float
     timestamp: float = 0.0
 
     def position(self) -> np.ndarray:
-        return np.array([self.x, self.y, self.z])
+        return np.array([self.x, self.y])
 
     def velocity(self) -> np.ndarray:
-        return np.array([self.vx, self.vy, self.vz])
+        return np.array([self.vx, self.vy])
 
     def acceleration(self) -> np.ndarray:
-        return np.array([self.ax, self.ay, self.az])
+        return np.array([self.ax, self.ay])
 
     def speed(self) -> float:
         return np.linalg.norm(self.velocity())
 
     def to_dict(self) -> dict:
         return {
-            'mass': self.mass,
-            'position': {'x': self.x, 'y': self.y, 'z': self.z},
-            'velocity': {'vx': self.vx, 'vy': self.vy, 'vz': self.vz},
-            'acceleration': {'ax': self.ax, 'ay': self.ay, 'az': self.az},
+            'position': {'x': self.x, 'y': self.y},
+            'velocity': {'vx': self.vx, 'vy': self.vy},
+            'acceleration': {'ax': self.ax, 'ay': self.ay},
+            'orientation': {'theta': self.theta, 'theta_dot': self.theta_dot},
             'timestamp': self.timestamp
         }
-
-@dataclass 
-class NRHDGConfig:
-    T: float = 1.0  # receding horizon time
-    dt: float = 0.1 # time step
-    n_steps: int = 10 # num of discretization steps
-
-    # Weights for our object function
-    # chosen arbitrarily tune later
-    w_progress: float = 1.0
-    w_deviation: float = 0.5
-    w_control: float = 0.1 
-
-    # TODO: make these make sense
-    max_thrust: float = 20.0 
-    mass: float = 5.0
-    drag_coeff: float = 0.0
