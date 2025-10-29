@@ -3,7 +3,6 @@ from control import DynamicProjections
 
 # Define initial 2D state
 initial_state = DroneState(
-    mass=1.5,        # kg
     x=0.0, y=0.0,    # start position
     vx=5.0, vy=0.0,  # initial velocity (5 m/s along x)
     ax=0.0, ay=0.0,  # initial acceleration
