@@ -32,7 +32,7 @@ class NRHDGController2D:
 
         return np.concatenate([vel, acc, [theta_dot], [0]])
 
-    def path_derivative(self, theta: float) -> np.ndarray:
+    def _path_derivative(self, theta: float) -> np.ndarray:
         # Derivative of 2D path
         return np.array([
             6 * np.cos(theta),
@@ -89,7 +89,7 @@ class NRHDGController2D:
         terminal = self.terminal_cost(ego_traj[-1], opp_traj[-1])
         return terminal + integral_cost
 
-    def propagate_state(self, state: DroneState, control: np.ndarray, dt: float) -> DroneState:
+    def _propagate_state(self, state: DroneState, control: np.ndarray, dt: float) -> DroneState:
         pos = state.position()[:2]
         vel = state.velocity()[:2]
 
