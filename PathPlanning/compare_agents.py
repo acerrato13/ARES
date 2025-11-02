@@ -436,6 +436,53 @@ def compare_agents_2d():
         print(f"\n✗ NRHDG finished BEHIND by {-theta_diff:.3f} radians")
     print("="*60)
 
+def testing():
+    ego_state = DroneState(
+        x=0.0, y=0.0,
+        vx=0.0, vy=0.0,
+        ax=0.0, ay=0.0,
+        theta=0.0,
+        theta_dot=0.5,
+        timestamp=0.0
+    )
+
+    opp_state = DroneState(
+        x=1.0, y=0.5,
+        vx=0.0, vy=0.0,
+        ax=0.0, ay=0.0,
+        theta=0.2,
+        theta_dot=0.5,
+        timestamp=0.0
+    )
+
+    role_switcher = DynamicRoleSwitching2D()
+
+    nrhdg_config = NRHDGConfig(
+        T=0.5,
+        dt=0.05,
+        n_steps=10,
+        w_progress=3.0,
+        w_deviation=1.0,
+        w_control=0.3,
+        max_thrust=50.0,
+        mass=0.5,
+        drag_coeff=0.1
+    )
+
+    controller = NRHDGController2D(role_switcher, nrhdg_config)
+
+    u = controller.compute_control(ego_state, opp_state)
+
+    dt = 0.1
+
+    new_state = update_drone_state_2d(ego_state, u, dt, controller.config)
+
+    #position = [new_state.x, new_state.y]
+    position = [1, 1]
+
+    print(position)
+
+    return position[0], position[1]
 
 if __name__ == "__main__":
     compare_agents_2d()
