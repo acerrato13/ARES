@@ -478,11 +478,11 @@ def testing():
     new_state = update_drone_state_2d(ego_state, u, dt, controller.config)
 
     #position = [new_state.x, new_state.y]
-    position = [1, 1]
+    position = [1, 2]
 
-    print(position)
+    print(f"Position: {position}")
 
-    return position[0], position[1]
+    return position
 
 if __name__ == "__main__":
     compare_agents_2d()
