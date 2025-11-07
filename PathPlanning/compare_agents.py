@@ -9,9 +9,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # Import your 2D agent classes
 from PathPlanning.nrhdg_agent import NRHDGController2D
 from PathPlanning.dynamic_role_switching import DynamicRoleSwitching2D
-from PathPlanning.core import DroneState 
-from config import NRHDGConfig
-from nmpc_opponent import NMPCOpponent
+from PathPlanning.core.State import DroneState 
+from PathPlanning.config import NRHDGConfig
+from PathPlanning.nmpc_opponent import NMPCOpponent
 
 
 def simulate_nrhdg_agent_2d(controller, initial_state, opponent_state, steps, dt=0.1):
@@ -437,45 +437,45 @@ def compare_agents_2d():
     print("="*60)
 
 def testing():
-    ego_state = DroneState(
-        x=0.0, y=0.0,
-        vx=0.0, vy=0.0,
-        ax=0.0, ay=0.0,
-        theta=0.0,
-        theta_dot=0.5,
-        timestamp=0.0
-    )
+    # ego_state = DroneState(
+    #     x=0.0, y=0.0,
+    #     vx=0.0, vy=0.0,
+    #     ax=0.0, ay=0.0,
+    #     theta=0.0,
+    #     theta_dot=0.5,
+    #     timestamp=0.0
+    # )
 
-    opp_state = DroneState(
-        x=1.0, y=0.5,
-        vx=0.0, vy=0.0,
-        ax=0.0, ay=0.0,
-        theta=0.2,
-        theta_dot=0.5,
-        timestamp=0.0
-    )
+    # opp_state = DroneState(
+    #     x=1.0, y=0.5,
+    #     vx=0.0, vy=0.0,
+    #     ax=0.0, ay=0.0,
+    #     theta=0.2,
+    #     theta_dot=0.5,
+    #     timestamp=0.0
+    # )
 
-    role_switcher = DynamicRoleSwitching2D()
+    # role_switcher = DynamicRoleSwitching2D()
 
-    nrhdg_config = NRHDGConfig(
-        T=0.5,
-        dt=0.05,
-        n_steps=10,
-        w_progress=3.0,
-        w_deviation=1.0,
-        w_control=0.3,
-        max_thrust=50.0,
-        mass=0.5,
-        drag_coeff=0.1
-    )
+    # nrhdg_config = NRHDGConfig(
+    #     T=0.5,
+    #     dt=0.05,
+    #     n_steps=10,
+    #     w_progress=3.0,
+    #     w_deviation=1.0,
+    #     w_control=0.3,
+    #     max_thrust=50.0,
+    #     mass=0.5,
+    #     drag_coeff=0.1
+    # )
 
-    controller = NRHDGController2D(role_switcher, nrhdg_config)
+    # controller = NRHDGController2D(role_switcher, nrhdg_config)
 
-    u = controller.compute_control(ego_state, opp_state)
+    # u = controller.compute_control(ego_state, opp_state)
 
-    dt = 0.1
+    # dt = 0.1
 
-    new_state = update_drone_state_2d(ego_state, u, dt, controller.config)
+    # new_state = update_drone_state_2d(ego_state, u, dt, controller.config)
 
     #position = [new_state.x, new_state.y]
     position = [1, 2]

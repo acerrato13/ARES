@@ -1,7 +1,7 @@
 import numpy as np
-from core import DroneState
-from config import NRHDGConfig
-from dynamic_role_switching import DynamicRoleSwitching2D
+from PathPlanning.core.State import DroneState
+from PathPlanning.config import NRHDGConfig
+from PathPlanning.dynamic_role_switching import DynamicRoleSwitching2D
 from typing import Tuple
 from scipy.optimize import minimize
 
