@@ -1,0 +1,1231 @@
+ Testing_cgxe
+
+ Timestamp is 690e6267 (Fri Nov  7 16:19:35 2025)
+
+ Preferred load address is 0000000180000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000ba40H .text$mn                CODE
+ 0001:0000ba40 00000036H .text$mn$00             CODE
+ 0001:0000ba76 00000092H .text$x                 CODE
+ 0002:00000000 000003a8H .idata$5                DATA
+ 0002:000003a8 00000038H .00cfg                  DATA
+ 0002:000003e0 00000008H .CRT$XCA                DATA
+ 0002:000003e8 00000008H .CRT$XCZ                DATA
+ 0002:000003f0 00000008H .CRT$XIA                DATA
+ 0002:000003f8 00000008H .CRT$XIZ                DATA
+ 0002:00000400 00000008H .CRT$XPA                DATA
+ 0002:00000408 00000008H .CRT$XPZ                DATA
+ 0002:00000410 00000008H .CRT$XTA                DATA
+ 0002:00000418 00000008H .CRT$XTZ                DATA
+ 0002:00000420 00000000H .gehcont$y              DATA
+ 0002:00000420 00000000H .gfids$y                DATA
+ 0002:00000420 00000260H .rdata                  DATA
+ 0002:00000680 00000080H .rdata$CastGuardVftablesA DATA
+ 0002:00000700 00000080H .rdata$CastGuardVftablesC DATA
+ 0002:00000780 00000120H .rdata$voltmd           DATA
+ 0002:000008a0 00000278H .rdata$zzzdbg           DATA
+ 0002:00000b18 00000008H .rtc$IAA                DATA
+ 0002:00000b20 00000008H .rtc$IZZ                DATA
+ 0002:00000b28 00000008H .rtc$TAA                DATA
+ 0002:00000b30 00000008H .rtc$TZZ                DATA
+ 0002:00000b38 000007f8H .xdata                  DATA
+ 0002:00001330 00000078H .edata                  DATA
+ 0002:000013a8 000000dcH .idata$2                DATA
+ 0002:00001484 00000014H .idata$3                DATA
+ 0002:00001498 000003a8H .idata$4                DATA
+ 0002:00001840 00000960H .idata$6                DATA
+ 0003:00000000 00002540H .data                   DATA
+ 0003:00002540 00000620H .bss                    DATA
+ 0004:00000000 000009a8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __AbsoluteZero             0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table   0000000000000000     <absolute>
+ 0000:00000000       __arm64x_extra_rfe_table_size 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_native_entrypoint 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata 0000000000000000     <absolute>
+ 0000:00000000       __arm64x_redirection_metadata_count 0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __enclave_config           0000000000000000     <absolute>
+ 0000:00000000       __guard_check_icall_a64n_fptr 0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_eh_cont_table      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_delayload_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat     0000000000000000     <absolute>
+ 0000:00000000       __hybrid_auxiliary_iat_copy 0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map          0000000000000000     <absolute>
+ 0000:00000000       __hybrid_code_map_count    0000000000000000     <absolute>
+ 0000:00000000       __hybrid_image_info_bitfield 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points 0000000000000000     <absolute>
+ 0000:00000000       __x64_code_ranges_to_entry_points_count 0000000000000000     <absolute>
+ 0000:00000100       __guard_flags              0000000000000100     <absolute>
+ 0000:00000000       __ImageBase                0000000180000000     <linker-defined>
+ 0001:00000000       mexfilerequiredapiversion  0000000180001000 f   c_mexapi_version.obj
+ 0001:00000030       cgxe_Testing_method_dispatcher 0000000180001030 f   Testing_cgxe.obj
+ 0001:00000170       method_dispatcher_YQg0KPp9US1iRXoVC2Rf7F 0000000180001170 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000013e0       cgxe_YQg0KPp9US1iRXoVC2Rf7F_BuildInfoUpdate 00000001800023e0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000014a0       cgxe_YQg0KPp9US1iRXoVC2Rf7F_fallback_info 00000001800024a0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00001540       mexFunction                0000000180002540 f   Testing_cgxe_registry.obj
+ 0001:00003400       _ssSetInputPortDirectFeedThroughFcn 0000000180004400 f   Testing_cgxe_registry.obj
+ 0001:00003570       _ssSetRWorkValueFcn        0000000180004570 f   Testing_cgxe_registry.obj
+ 0001:000035f0       _ssGetRWorkValueFcn        00000001800045f0 f   Testing_cgxe_registry.obj
+ 0001:00003660       _ssSetIWorkValueFcn        0000000180004660 f   Testing_cgxe_registry.obj
+ 0001:000036e0       _ssGetIWorkValueFcn        00000001800046e0 f   Testing_cgxe_registry.obj
+ 0001:00003750       _ssSetPWorkValueFcn        0000000180004750 f   Testing_cgxe_registry.obj
+ 0001:000037d0       _ssGetPWorkValueFcn        00000001800047d0 f   Testing_cgxe_registry.obj
+ 0001:00003840       _ssGetInputPortSignalFcn   0000000180004840 f   Testing_cgxe_registry.obj
+ 0001:00003bd0       _ssGetInputPortBufferDstPortFcn 0000000180004bd0 f   Testing_cgxe_registry.obj
+ 0001:00003c50       _ssGetInputPortSignalPtrsFcn 0000000180004c50 f   Testing_cgxe_registry.obj
+ 0001:00003fe0       ssGetParameterTuningCompliance 0000000180004fe0 f   Testing_cgxe_registry.obj
+ 0001:00004050       _ssReadInputStringFcn      0000000180005050 f   Testing_cgxe_registry.obj
+ 0001:000040c0       ssGetDTypeIdFromMxArray    00000001800050c0 f   Testing_cgxe_registry.obj
+ 0001:000041e0       ssWriteRTWMx2dMatParam     00000001800051e0 f   Testing_cgxe_registry.obj
+ 0001:00004270       ssWriteRTWMxVectParam      0000000180005270 f   Testing_cgxe_registry.obj
+ 0001:000042f0       ssWriteRTWParameters       00000001800052f0 f   Testing_cgxe_registry.obj
+ 0001:000048b0       ssWriteRTWParamSettings    00000001800058b0 f   Testing_cgxe_registry.obj
+ 0001:00004fa0       ssWriteRTWStr              0000000180005fa0 f   Testing_cgxe_registry.obj
+ 0001:00005000       ssWriteRTWWorkVect         0000000180006000 f   Testing_cgxe_registry.obj
+ 0001:00005560       ssWarning                  0000000180006560 f   Testing_cgxe_registry.obj
+ 0001:00005650       ssGetRootSS                0000000180006650 f   Testing_cgxe_registry.obj
+ 0001:00005710       ssGetParentSS              0000000180006710 f   Testing_cgxe_registry.obj
+ 0001:000057d0       ssWriteRTWNameValuePair    00000001800067d0 f   Testing_cgxe_registry.obj
+ 0001:00005cd0       _ssSetInputPortMatrixDimensions 0000000180006cd0 f   Testing_cgxe_registry.obj
+ 0001:00005e20       _ssSetOutputPortMatrixDimensions 0000000180006e20 f   Testing_cgxe_registry.obj
+ 0001:00005f70       _ssSetInputPortVectorDimension 0000000180006f70 f   Testing_cgxe_registry.obj
+ 0001:00006020       _ssSetOutputPortVectorDimension 0000000180007020 f   Testing_cgxe_registry.obj
+ 0001:000060d0       ssIsRunTimeParamTunable    00000001800070d0 f   Testing_cgxe_registry.obj
+ 0001:00006140       ssGetSFuncBlockHandle      0000000180007140 f   Testing_cgxe_registry.obj
+ 0001:000061b0       _ssGetCallSystemNumFcnCallDestinations 00000001800071b0 f   Testing_cgxe_registry.obj
+ 0001:00006220       _ssGetCurrentInputPortWidth 0000000180007220 f   Testing_cgxe_registry.obj
+ 0001:00006360       _ssGetCurrentOutputPortWidth 0000000180007360 f   Testing_cgxe_registry.obj
+ 0001:000064a0       ssGetIsZeroCrossControlDisabled 00000001800074a0 f   Testing_cgxe_registry.obj
+ 0001:00006510       ssSetIsInputPortUsedForContZcSignal 0000000180007510 f   Testing_cgxe_registry.obj
+ 0001:00006580       ssSetZcSignalIsZcElementDisc 0000000180007580 f   Testing_cgxe_registry.obj
+ 0001:00006630       ssSetZcSignalName          0000000180007630 f   Testing_cgxe_registry.obj
+ 0001:000066a0       ssSetZcSignalWidth         00000001800076a0 f   Testing_cgxe_registry.obj
+ 0001:00006710       ssSetZcSignalZcEventType   0000000180007710 f   Testing_cgxe_registry.obj
+ 0001:00006780       ssSetZcSignalType          0000000180007780 f   Testing_cgxe_registry.obj
+ 0001:000067f0       ssSetZcSignalZcTol         00000001800077f0 f   Testing_cgxe_registry.obj
+ 0001:00006860       ssSetZcSignalNeedsEventNotification 0000000180007860 f   Testing_cgxe_registry.obj
+ 0001:000068d0       ssCreateAndAddZcSignalInfo 00000001800078d0 f   Testing_cgxe_registry.obj
+ 0001:00006940       ssCloneAndAddZcSignalInfo  0000000180007940 f   Testing_cgxe_registry.obj
+ 0001:000069b0       ssGetNumZcSignals          00000001800079b0 f   Testing_cgxe_registry.obj
+ 0001:00006a20       ssGetZcSignalVector        0000000180007a20 f   Testing_cgxe_registry.obj
+ 0001:00006a90       ssGetZcSignalName          0000000180007a90 f   Testing_cgxe_registry.obj
+ 0001:00006b00       ssGetZcSignalWidth         0000000180007b00 f   Testing_cgxe_registry.obj
+ 0001:00006b70       ssGetZcSignalZcEventType   0000000180007b70 f   Testing_cgxe_registry.obj
+ 0001:00006be0       ssGetZcSignalZcEvents      0000000180007be0 f   Testing_cgxe_registry.obj
+ 0001:00006c50       ssGetZcSignalType          0000000180007c50 f   Testing_cgxe_registry.obj
+ 0001:00006cc0       ssGetZcSignalZcTol         0000000180007cc0 f   Testing_cgxe_registry.obj
+ 0001:00006d40       ssGetZcSignalNeedsEventNotification 0000000180007d40 f   Testing_cgxe_registry.obj
+ 0001:00006db0       ssGetZcSignalIsZcElementDisc 0000000180007db0 f   Testing_cgxe_registry.obj
+ 0001:00006e50       ssGetIsInputPortElementContinuous 0000000180007e50 f   Testing_cgxe_registry.obj
+ 0001:00006ef0       _ssGetAbsTol               0000000180007ef0 f   Testing_cgxe_registry.obj
+ 0001:00006f60       _ssSetStateAbsTol          0000000180007f60 f   Testing_cgxe_registry.obj
+ 0001:00007040       _ssSetInputPortReusableFcn 0000000180008040 f   Testing_cgxe_registry.obj
+ 0001:00007140       _ssSetOutputPortReusableFcn 0000000180008140 f   Testing_cgxe_registry.obj
+ 0001:00007240       _ssSetSymbolicDimsSupport  0000000180008240 f   Testing_cgxe_registry.obj
+ 0001:000072b0       _ssRegisterSymbolicDimsExpr 00000001800082b0 f   Testing_cgxe_registry.obj
+ 0001:00007330       _ssRegisterSymbolicDimsMATLABExpr 0000000180008330 f   Testing_cgxe_registry.obj
+ 0001:000073c0       _ssRegisterSymbolicDims    00000001800083c0 f   Testing_cgxe_registry.obj
+ 0001:00007460       _ssRegisterSymbolicDimsString 0000000180008460 f   Testing_cgxe_registry.obj
+ 0001:000074e0       _ssRegisterSymbolicDimsIntValue 00000001800084e0 f   Testing_cgxe_registry.obj
+ 0001:00007550       _ssRegisterSymbolicEqualRelation 0000000180008550 f   Testing_cgxe_registry.obj
+ 0001:000075c0       _ssRegisterSymbolicEqualValue 00000001800085c0 f   Testing_cgxe_registry.obj
+ 0001:00007630       _ssAmendLeadingSymbolicDims 0000000180008630 f   Testing_cgxe_registry.obj
+ 0001:000076b0       _ssAmendTrailingSymbolicDims 00000001800086b0 f   Testing_cgxe_registry.obj
+ 0001:00007730       _ssRegisterSymbolicDimsPlus 0000000180008730 f   Testing_cgxe_registry.obj
+ 0001:000077b0       _ssRegisterSymbolicDimsMinus 00000001800087b0 f   Testing_cgxe_registry.obj
+ 0001:00007830       _ssRegisterSymbolicDimsMultiply 0000000180008830 f   Testing_cgxe_registry.obj
+ 0001:000078b0       _ssRegisterSymbolicDimsDivide 00000001800088b0 f   Testing_cgxe_registry.obj
+ 0001:00007930       _ssGetNumSymbolicDims      0000000180008930 f   Testing_cgxe_registry.obj
+ 0001:000079a0       _ssGetSymbolicDim          00000001800089a0 f   Testing_cgxe_registry.obj
+ 0001:00007a20       _ssSetInputPortSymbolicDimsId 0000000180008a20 f   Testing_cgxe_registry.obj
+ 0001:00007a90       _ssGetCompInputPortSymbolicDimsId 0000000180008a90 f   Testing_cgxe_registry.obj
+ 0001:00007b00       _ssSetCompInputPortSymbolicDimsId 0000000180008b00 f   Testing_cgxe_registry.obj
+ 0001:00007b70       _ssSetOutputPortSymbolicDimsId 0000000180008b70 f   Testing_cgxe_registry.obj
+ 0001:00007be0       _ssGetCompOutputPortSymbolicDimsId 0000000180008be0 f   Testing_cgxe_registry.obj
+ 0001:00007c50       _ssSetCompOutputPortSymbolicDimsId 0000000180008c50 f   Testing_cgxe_registry.obj
+ 0001:00007cc0       _ssGetDWorkSymbolicDimsId  0000000180008cc0 f   Testing_cgxe_registry.obj
+ 0001:00007d30       _ssSetDWorkSymbolicDimsId  0000000180008d30 f   Testing_cgxe_registry.obj
+ 0001:00007da0       _ssGetCompDWorkSymbolicDimsId 0000000180008da0 f   Testing_cgxe_registry.obj
+ 0001:00007e10       _ssSetCompDWorkSymbolicDimsId 0000000180008e10 f   Testing_cgxe_registry.obj
+ 0001:00007e80       _ssCreateSLCGStringBuffer  0000000180008e80 f   Testing_cgxe_registry.obj
+ 0001:00007ef0       _ssAddToSLCGStringBuffer   0000000180008ef0 f   Testing_cgxe_registry.obj
+ 0001:00007f60       _ssGetPointerContainedData 0000000180008f60 f   Testing_cgxe_registry.obj
+ 0001:00007ff0       _ssGetPointerContainedDataWidth 0000000180008ff0 f   Testing_cgxe_registry.obj
+ 0001:00008080       _ssRegisterDynamicArrayDataTypeFcn 0000000180009080 f   Testing_cgxe_registry.obj
+ 0001:00008120       _ssGetDynamicArrayContainedDataCurrentWidthFcn 0000000180009120 f   Testing_cgxe_registry.obj
+ 0001:000081f0       _ssGetDynamicArrayContainedDataFcn 00000001800091f0 f   Testing_cgxe_registry.obj
+ 0001:000082c0       _ssGetInputPortDynamicArrayDataFcn 00000001800092c0 f   Testing_cgxe_registry.obj
+ 0001:00008380       _ssGetOutputPortDynamicArrayDataFcn 0000000180009380 f   Testing_cgxe_registry.obj
+ 0001:00008440       _ssGetInputPortDynamicArrayContainedDataFcn 0000000180009440 f   Testing_cgxe_registry.obj
+ 0001:00008500       _ssGetOutputPortDynamicArrayContainedDataFcn 0000000180009500 f   Testing_cgxe_registry.obj
+ 0001:000085c0       _ssGetDynamicArrayDWorkContainedDataFcn 00000001800095c0 f   Testing_cgxe_registry.obj
+ 0001:0000a0f0       __local_stdio_printf_options 000000018000b0f0 f i Testing_cgxe_registry.obj
+ 0001:0000a100       _vsnprintf_l               000000018000b100 f i Testing_cgxe_registry.obj
+ 0001:0000a180       _vsprintf_l                000000018000b180 f i Testing_cgxe_registry.obj
+ 0001:0000a1d0       sprintf                    000000018000b1d0 f i Testing_cgxe_registry.obj
+ 0001:0000a21f       mxGetPr_800                000000018000b21f f   libmx:libmx.dll
+ 0001:0000a225       mxSetCell_800              000000018000b225 f   libmx:libmx.dll
+ 0001:0000a22b       mxSetFieldByNumber_800     000000018000b22b f   libmx:libmx.dll
+ 0001:0000a231       mxCreateDoubleMatrix_800   000000018000b231 f   libmx:libmx.dll
+ 0001:0000a237       mxCreateString_800         000000018000b237 f   libmx:libmx.dll
+ 0001:0000a23d       mxCreateCellMatrix_800     000000018000b23d f   libmx:libmx.dll
+ 0001:0000a243       mxCreateStructMatrix_800   000000018000b243 f   libmx:libmx.dll
+ 0001:0000a249       mxCalloc_800               000000018000b249 f   libmx:libmx.dll
+ 0001:0000a24f       mxGetM_800                 000000018000b24f f   libmx:libmx.dll
+ 0001:0000a255       mxGetClassID_800           000000018000b255 f   libmx:libmx.dll
+ 0001:0000a25b       mxGetData_800              000000018000b25b f   libmx:libmx.dll
+ 0001:0000a261       mxIsNumeric_800            000000018000b261 f   libmx:libmx.dll
+ 0001:0000a267       mxIsChar_800               000000018000b267 f   libmx:libmx.dll
+ 0001:0000a26d       mxIsComplex_800            000000018000b26d f   libmx:libmx.dll
+ 0001:0000a273       mxGetN_800                 000000018000b273 f   libmx:libmx.dll
+ 0001:0000a279       mxSetField_800             000000018000b279 f   libmx:libmx.dll
+ 0001:0000a27f       mxCreateNumericMatrix_800  000000018000b27f f   libmx:libmx.dll
+ 0001:0000a285       mxCreateDoubleScalar_800   000000018000b285 f   libmx:libmx.dll
+ 0001:0000a28b       mxGetString_800            000000018000b28b f   libmx:libmx.dll
+ 0001:0000a291       mexWarnMsgTxt_800          000000018000b291 f   libmex:libmex.dll
+ 0001:0000a297       mexPrintf_800              000000018000b297 f   libmex:libmex.dll
+ 0001:0000a29d       mexCallMATLAB_800          000000018000b29d f   libmex:libmex.dll
+ 0001:0000a2a3       mexUnlock_800              000000018000b2a3 f   libmex:libmex.dll
+ 0001:0000a2a9       mexIsLocked_800            000000018000b2a9 f   libmex:libmex.dll
+ 0001:0000a2af       cgxertGetOutputPortSignal  000000018000b2af f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2b5       cgxertSetSimStateCompliance 000000018000b2b5 f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2bb       cgxertGetRuntimeInstance   000000018000b2bb f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2c1       cgxertSetRuntimeInstance   000000018000b2c1 f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2c7       cgxertGetEMLRTCtx          000000018000b2c7 f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2cd       cgxertReportError          000000018000b2cd f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2d3       cgxertInitMLPythonIFace    000000018000b2d3 f   libmwcgxert:libmwcgxert.dll
+ 0001:0000a2d9       suToCStr                   000000018000b2d9 f   libmwstringutil:libmwstringutil.dll
+ 0001:0000a2df       suAddStackString           000000018000b2df f   libmwstringutil:libmwstringutil.dll
+ 0001:0000a2e5       suStringStackSize          000000018000b2e5 f   libmwstringutil:libmwstringutil.dll
+ 0001:0000a2eb       suMoveReturnedStringsToTopOfCallerStack 000000018000b2eb f   libmwstringutil:libmwstringutil.dll
+ 0001:0000a2f1       PyType_IsSubtype           000000018000b2f1 f   python310:python310.dll
+ 0001:0000a2f7       PyObject_Str               000000018000b2f7 f   python310:python310.dll
+ 0001:0000a2fd       Py_IncRef                  000000018000b2fd f   python310:python310.dll
+ 0001:0000a303       Py_DecRef                  000000018000b303 f   python310:python310.dll
+ 0001:0000a309       PyUnicode_FromString       000000018000b309 f   python310:python310.dll
+ 0001:0000a30f       PyUnicode_Join             000000018000b30f f   python310:python310.dll
+ 0001:0000a315       PyUnicode_AsUTF8           000000018000b315 f   python310:python310.dll
+ 0001:0000a31b       PyFloat_FromDouble         000000018000b31b f   python310:python310.dll
+ 0001:0000a321       PyFloat_AsDouble           000000018000b321 f   python310:python310.dll
+ 0001:0000a327       PyList_Size                000000018000b327 f   python310:python310.dll
+ 0001:0000a32d       PyDict_GetItem             000000018000b32d f   python310:python310.dll
+ 0001:0000a333       PyDict_DelItem             000000018000b333 f   python310:python310.dll
+ 0001:0000a339       PyDict_Keys                000000018000b339 f   python310:python310.dll
+ 0001:0000a33f       PyDict_Copy                000000018000b33f f   python310:python310.dll
+ 0001:0000a345       PyDict_Contains            000000018000b345 f   python310:python310.dll
+ 0001:0000a34b       PyDict_GetItemString       000000018000b34b f   python310:python310.dll
+ 0001:0000a351       PyDict_SetItemString       000000018000b351 f   python310:python310.dll
+ 0001:0000a357       PyModule_GetDict           000000018000b357 f   python310:python310.dll
+ 0001:0000a35d       PyGILState_Ensure          000000018000b35d f   python310:python310.dll
+ 0001:0000a363       PyGILState_Release         000000018000b363 f   python310:python310.dll
+ 0001:0000a369       PyObject_CallMethod        000000018000b369 f   python310:python310.dll
+ 0001:0000a36f       PySequence_GetItem         000000018000b36f f   python310:python310.dll
+ 0001:0000a375       PyErr_Clear                000000018000b375 f   python310:python310.dll
+ 0001:0000a37b       PyErr_Fetch                000000018000b37b f   python310:python310.dll
+ 0001:0000a381       PyErr_NormalizeException   000000018000b381 f   python310:python310.dll
+ 0001:0000a387       Py_CompileStringExFlags    000000018000b387 f   python310:python310.dll
+ 0001:0000a38d       PyImport_AddModule         000000018000b38d f   python310:python310.dll
+ 0001:0000a393       PyImport_ImportModule      000000018000b393 f   python310:python310.dll
+ 0001:0000a399       PyEval_EvalCode            000000018000b399 f   python310:python310.dll
+ 0001:0000a3a0       __raise_securityfailure    000000018000b3a0 f   MSVCRT:gs_report.obj
+ 0001:0000a3d4       __report_gsfailure         000000018000b3d4 f   MSVCRT:gs_report.obj
+ 0001:0000a4a8       __report_rangecheckfailure 000000018000b4a8 f   MSVCRT:gs_report.obj
+ 0001:0000a4bc       __report_securityfailure   000000018000b4bc f   MSVCRT:gs_report.obj
+ 0001:0000a55c       __report_securityfailureEx 000000018000b55c f   MSVCRT:gs_report.obj
+ 0001:0000a750       __GSHandlerCheck           000000018000b750 f   MSVCRT:gshandler.obj
+ 0001:0000a770       __GSHandlerCheckCommon     000000018000b770 f   MSVCRT:gshandler.obj
+ 0001:0000a7e0       __security_check_cookie    000000018000b7e0 f   MSVCRT:amdsecgs.obj
+ 0001:0000ab30       _CRT_INIT                  000000018000bb30 f   MSVCRT:dll_dllmain.obj
+ 0001:0000ab38       _DllMainCRTStartup         000000018000bb38 f   MSVCRT:dll_dllmain.obj
+ 0001:0000abe8       __security_init_cookie     000000018000bbe8 f   MSVCRT:gs_support.obj
+ 0001:0000ac98       DllMain                    000000018000bc98 f   MSVCRT:dll_dllmain_stub.obj
+ 0001:0000acbc       ?__scrt_initialize_type_info@@YAXXZ 000000018000bcbc f   MSVCRT:tncleanup.obj
+ 0001:0000accc       ?__scrt_uninitialize_type_info@@YAXXZ 000000018000bccc f   MSVCRT:tncleanup.obj
+ 0001:0000acd8       __local_stdio_scanf_options 000000018000bcd8 f i MSVCRT:default_local_stdio_options.obj
+ 0001:0000ace0       __scrt_initialize_default_local_stdio_options 000000018000bce0 f   MSVCRT:default_local_stdio_options.obj
+ 0001:0000acfc       ?configure_argv@__scrt_narrow_argv_policy@@SAHXZ 000000018000bcfc f i MSVCRT:utility.obj
+ 0001:0000ad5c       ?initialize_environment@__scrt_narrow_environment_policy@@SAHXZ 000000018000bd5c f i MSVCRT:utility.obj
+ 0001:0000ad94       NtCurrentTeb               000000018000bd94 f i MSVCRT:utility.obj
+ 0001:0000ada0       __scrt_acquire_startup_lock 000000018000bda0 f   MSVCRT:utility.obj
+ 0001:0000addc       __scrt_dllmain_after_initialize_c 000000018000bddc f   MSVCRT:utility.obj
+ 0001:0000ae10       __scrt_dllmain_before_initialize_c 000000018000be10 f   MSVCRT:utility.obj
+ 0001:0000ae28       __scrt_dllmain_crt_thread_attach 000000018000be28 f   MSVCRT:utility.obj
+ 0001:0000ae50       __scrt_dllmain_crt_thread_detach 000000018000be50 f   MSVCRT:utility.obj
+ 0001:0000ae68       __scrt_dllmain_exception_filter 000000018000be68 f   MSVCRT:utility.obj
+ 0001:0000aec8       __scrt_dllmain_uninitialize_c 000000018000bec8 f   MSVCRT:utility.obj
+ 0001:0000aef8       __scrt_dllmain_uninitialize_critical 000000018000bef8 f   MSVCRT:utility.obj
+ 0001:0000af0c       __scrt_initialize_crt      000000018000bf0c f   MSVCRT:utility.obj
+ 0001:0000af48       __scrt_initialize_onexit_tables 000000018000bf48 f   MSVCRT:utility.obj
+ 0001:0000afd4       __scrt_is_nonwritable_in_current_image 000000018000bfd4 f   MSVCRT:utility.obj
+ 0001:0000b06c       __scrt_release_startup_lock 000000018000c06c f   MSVCRT:utility.obj
+ 0001:0000b090       __scrt_uninitialize_crt    000000018000c090 f   MSVCRT:utility.obj
+ 0001:0000b0bc       _onexit                    000000018000c0bc f   MSVCRT:utility.obj
+ 0001:0000b0f8       at_quick_exit              000000018000c0f8 f   MSVCRT:utility.obj
+ 0001:0000b118       atexit                     000000018000c118 f   MSVCRT:utility.obj
+ 0001:0000b130       __scrt_get_dyn_tls_init_callback 000000018000c130 f   MSVCRT:dyn_tls_init.obj
+ 0001:0000b138       __crt_debugger_hook        000000018000c138 f   MSVCRT:utility_desktop.obj
+ 0001:0000b144       __scrt_fastfail            000000018000c144 f   MSVCRT:utility_desktop.obj
+ 0001:0000b290       __scrt_get_show_window_mode 000000018000c290 f   MSVCRT:utility_desktop.obj
+ 0001:0000b2cc       __scrt_initialize_mta      000000018000c2cc f   MSVCRT:utility_desktop.obj
+ 0001:0000b2d4       __scrt_initialize_winrt    000000018000c2d4 f   MSVCRT:utility_desktop.obj
+ 0001:0000b2d8       __scrt_is_managed_app      000000018000c2d8 f   MSVCRT:utility_desktop.obj
+ 0001:0000b32c       __scrt_set_unhandled_exception_filter 000000018000c32c f   MSVCRT:utility_desktop.obj
+ 0001:0000b33c       __scrt_exe_initialize_mta  000000018000c33c f   MSVCRT:utility_desktop.obj
+ 0001:0000b33c       __scrt_stub_for_initialize_mta 000000018000c33c f   MSVCRT:utility_desktop.obj
+ 0001:0000b340       __scrt_unhandled_exception_filter 000000018000c340 f   MSVCRT:utility_desktop.obj
+ 0001:0000b3a4       _RTC_Initialize            000000018000c3a4 f   MSVCRT:initsect.obj
+ 0001:0000b3e0       _RTC_Terminate             000000018000c3e0 f   MSVCRT:initsect.obj
+ 0001:0000b41c       _guard_check_icall_nop     000000018000c41c f i MSVCRT:guard_support.obj
+ 0001:0000b420       ReadNoFence64              000000018000c420 f i MSVCRT:guard_support.obj
+ 0001:0000b424       ReadPointerNoFence         000000018000c424 f i MSVCRT:guard_support.obj
+ 0001:0000b428       __castguard_check_failure_debugbreak 000000018000c428 f i MSVCRT:guard_support.obj
+ 0001:0000b444       __castguard_check_failure_fastfail 000000018000c444 f i MSVCRT:guard_support.obj
+ 0001:0000b468       __castguard_check_failure_nop 000000018000c468 f i MSVCRT:guard_support.obj
+ 0001:0000b46c       __castguard_check_failure_os_handled 000000018000c46c f i MSVCRT:guard_support.obj
+ 0001:0000b4b8       __castguard_check_failure_user_handled 000000018000c4b8 f i MSVCRT:guard_support.obj
+ 0001:0000b52c       __castguard_set_user_handler 000000018000c52c f i MSVCRT:guard_support.obj
+ 0001:0000b538       __castguard_slow_path_check_debugbreak 000000018000c538 f i MSVCRT:guard_support.obj
+ 0001:0000b56c       __castguard_slow_path_check_fastfail 000000018000c56c f i MSVCRT:guard_support.obj
+ 0001:0000b5a8       __castguard_slow_path_check_nop 000000018000c5a8 f i MSVCRT:guard_support.obj
+ 0001:0000b5ac       __castguard_slow_path_check_os_handled 000000018000c5ac f i MSVCRT:guard_support.obj
+ 0001:0000b5f8       __castguard_slow_path_check_user_handled 000000018000c5f8 f i MSVCRT:guard_support.obj
+ 0001:0000b664       _guard_icall_checks_enforced 000000018000c664 f i MSVCRT:guard_support.obj
+ 0001:0000b67c       _guard_rf_checks_enforced  000000018000c67c f i MSVCRT:guard_support.obj
+ 0001:0000b680       __isa_available_init       000000018000c680 f   MSVCRT:cpu_disp.obj
+ 0001:0000b918       _get_startup_argv_mode     000000018000c918 f   MSVCRT:argv_mode.obj
+ 0001:0000b920       __scrt_is_ucrt_dll_in_use  000000018000c920 f   MSVCRT:ucrt_detection.obj
+ 0001:0000b930       RtlCaptureContext          000000018000c930 f   kernel32:KERNEL32.dll
+ 0001:0000b936       RtlLookupFunctionEntry     000000018000c936 f   kernel32:KERNEL32.dll
+ 0001:0000b93c       RtlVirtualUnwind           000000018000c93c f   kernel32:KERNEL32.dll
+ 0001:0000b942       UnhandledExceptionFilter   000000018000c942 f   kernel32:KERNEL32.dll
+ 0001:0000b948       SetUnhandledExceptionFilter 000000018000c948 f   kernel32:KERNEL32.dll
+ 0001:0000b94e       GetCurrentProcess          000000018000c94e f   kernel32:KERNEL32.dll
+ 0001:0000b954       TerminateProcess           000000018000c954 f   kernel32:KERNEL32.dll
+ 0001:0000b95a       IsProcessorFeaturePresent  000000018000c95a f   kernel32:KERNEL32.dll
+ 0001:0000b960       QueryPerformanceCounter    000000018000c960 f   kernel32:KERNEL32.dll
+ 0001:0000b966       GetCurrentProcessId        000000018000c966 f   kernel32:KERNEL32.dll
+ 0001:0000b96c       GetCurrentThreadId         000000018000c96c f   kernel32:KERNEL32.dll
+ 0001:0000b972       GetSystemTimeAsFileTime    000000018000c972 f   kernel32:KERNEL32.dll
+ 0001:0000b978       DisableThreadLibraryCalls  000000018000c978 f   kernel32:KERNEL32.dll
+ 0001:0000b97e       InitializeSListHead        000000018000c97e f   kernel32:KERNEL32.dll
+ 0001:0000b984       IsDebuggerPresent          000000018000c984 f   kernel32:KERNEL32.dll
+ 0001:0000b98a       GetStartupInfoW            000000018000c98a f   kernel32:KERNEL32.dll
+ 0001:0000b990       GetModuleHandleW           000000018000c990 f   kernel32:KERNEL32.dll
+ 0001:0000b996       memcpy                     000000018000c996 f   vcruntime:VCRUNTIME140.dll
+ 0001:0000b99c       __C_specific_handler       000000018000c99c f   vcruntime:VCRUNTIME140.dll
+ 0001:0000b9a2       __std_type_info_destroy_list 000000018000c9a2 f   vcruntime:VCRUNTIME140.dll
+ 0001:0000b9a8       __current_exception        000000018000c9a8 f   vcruntime:VCRUNTIME140.dll
+ 0001:0000b9ae       __current_exception_context 000000018000c9ae f   vcruntime:VCRUNTIME140.dll
+ 0001:0000b9b4       memset                     000000018000c9b4 f   vcruntime:VCRUNTIME140.dll
+ 0001:0000b9ba       strlen                     000000018000c9ba f   ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0001:0000b9c0       calloc                     000000018000c9c0 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:0000b9c6       free                       000000018000c9c6 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:0000b9cc       strcmp                     000000018000c9cc f   ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0001:0000b9d2       __stdio_common_vsprintf    000000018000c9d2 f   ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0001:0000b9d8       malloc                     000000018000c9d8 f   ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0001:0000b9de       _initterm                  000000018000c9de f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000b9e4       _initterm_e                000000018000c9e4 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000b9ea       _seh_filter_dll            000000018000c9ea f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000b9f0       _configure_narrow_argv     000000018000c9f0 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000b9f6       _initialize_narrow_environment 000000018000c9f6 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000b9fc       _initialize_onexit_table   000000018000c9fc f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba02       _register_onexit_function  000000018000ca02 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba08       _execute_onexit_table      000000018000ca08 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba0e       _crt_atexit                000000018000ca0e f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba14       _crt_at_quick_exit         000000018000ca14 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba1a       _cexit                     000000018000ca1a f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba20       terminate                  000000018000ca20 f   ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0001:0000ba28       __acrt_initialize          000000018000ca28 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba28       __scrt_stub_for_acrt_initialize 000000018000ca28 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba28       __vcrt_initialize          000000018000ca28 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba2c       __acrt_thread_attach       000000018000ca2c f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba2c       __scrt_stub_for_acrt_thread_attach 000000018000ca2c f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba2c       __vcrt_thread_attach       000000018000ca2c f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba30       __acrt_thread_detach       000000018000ca30 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba30       __scrt_stub_for_acrt_thread_detach 000000018000ca30 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba30       __vcrt_thread_detach       000000018000ca30 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba34       __acrt_uninitialize        000000018000ca34 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba34       __scrt_stub_for_acrt_uninitialize 000000018000ca34 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba34       __vcrt_uninitialize        000000018000ca34 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba38       __acrt_uninitialize_critical 000000018000ca38 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba38       __scrt_stub_for_acrt_uninitialize_critical 000000018000ca38 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba38       __vcrt_uninitialize_critical 000000018000ca38 f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba3c       __scrt_stub_for_is_c_termination_complete 000000018000ca3c f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba3c       _is_c_termination_complete 000000018000ca3c f   MSVCRT:ucrt_stubs.obj
+ 0001:0000ba50       _guard_dispatch_icall_nop  000000018000ca50 f   MSVCRT:guard_dispatch.obj
+ 0001:0000ba70       _guard_xfg_dispatch_icall_nop 000000018000ca70 f   MSVCRT:guard_xfg_dispatch.obj
+ 0002:00000000       __imp_IsDebuggerPresent    000000018000d000     kernel32:KERNEL32.dll
+ 0002:00000008       __imp_InitializeSListHead  000000018000d008     kernel32:KERNEL32.dll
+ 0002:00000010       __imp_DisableThreadLibraryCalls 000000018000d010     kernel32:KERNEL32.dll
+ 0002:00000018       __imp_GetSystemTimeAsFileTime 000000018000d018     kernel32:KERNEL32.dll
+ 0002:00000020       __imp_GetCurrentThreadId   000000018000d020     kernel32:KERNEL32.dll
+ 0002:00000028       __imp_GetCurrentProcessId  000000018000d028     kernel32:KERNEL32.dll
+ 0002:00000030       __imp_QueryPerformanceCounter 000000018000d030     kernel32:KERNEL32.dll
+ 0002:00000038       __imp_IsProcessorFeaturePresent 000000018000d038     kernel32:KERNEL32.dll
+ 0002:00000040       __imp_TerminateProcess     000000018000d040     kernel32:KERNEL32.dll
+ 0002:00000048       __imp_GetCurrentProcess    000000018000d048     kernel32:KERNEL32.dll
+ 0002:00000050       __imp_SetUnhandledExceptionFilter 000000018000d050     kernel32:KERNEL32.dll
+ 0002:00000058       __imp_UnhandledExceptionFilter 000000018000d058     kernel32:KERNEL32.dll
+ 0002:00000060       __imp_RtlVirtualUnwind     000000018000d060     kernel32:KERNEL32.dll
+ 0002:00000068       __imp_RtlLookupFunctionEntry 000000018000d068     kernel32:KERNEL32.dll
+ 0002:00000070       __imp_RtlCaptureContext    000000018000d070     kernel32:KERNEL32.dll
+ 0002:00000078       __imp_GetStartupInfoW      000000018000d078     kernel32:KERNEL32.dll
+ 0002:00000080       __imp_GetModuleHandleW     000000018000d080     kernel32:KERNEL32.dll
+ 0002:00000088       \177KERNEL32_NULL_THUNK_DATA 000000018000d088     kernel32:KERNEL32.dll
+ 0002:00000090       __imp_memcpy               000000018000d090     vcruntime:VCRUNTIME140.dll
+ 0002:00000098       __imp___C_specific_handler 000000018000d098     vcruntime:VCRUNTIME140.dll
+ 0002:000000a0       __imp___std_type_info_destroy_list 000000018000d0a0     vcruntime:VCRUNTIME140.dll
+ 0002:000000a8       __imp___current_exception  000000018000d0a8     vcruntime:VCRUNTIME140.dll
+ 0002:000000b0       __imp___current_exception_context 000000018000d0b0     vcruntime:VCRUNTIME140.dll
+ 0002:000000b8       __imp_memset               000000018000d0b8     vcruntime:VCRUNTIME140.dll
+ 0002:000000c0       \177VCRUNTIME140_NULL_THUNK_DATA 000000018000d0c0     vcruntime:VCRUNTIME140.dll
+ 0002:000000c8       __imp_free                 000000018000d0c8     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000000d0       __imp_malloc               000000018000d0d0     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000000d8       __imp_calloc               000000018000d0d8     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000000e0       \177api-ms-win-crt-heap-l1-1-0_NULL_THUNK_DATA 000000018000d0e0     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:000000e8       __imp__initterm_e          000000018000d0e8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000000f0       __imp__seh_filter_dll      000000018000d0f0     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:000000f8       __imp__configure_narrow_argv 000000018000d0f8     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000100       __imp__initterm            000000018000d100     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000108       __imp__initialize_onexit_table 000000018000d108     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000110       __imp__register_onexit_function 000000018000d110     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000118       __imp__execute_onexit_table 000000018000d118     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000120       __imp__crt_atexit          000000018000d120     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000128       __imp__crt_at_quick_exit   000000018000d128     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000130       __imp__cexit               000000018000d130     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000138       __imp__initialize_narrow_environment 000000018000d138     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000140       __imp_terminate            000000018000d140     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000148       \177api-ms-win-crt-runtime-l1-1-0_NULL_THUNK_DATA 000000018000d148     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00000150       __imp___stdio_common_vsprintf 000000018000d150     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:00000158       \177api-ms-win-crt-stdio-l1-1-0_NULL_THUNK_DATA 000000018000d158     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:00000160       __imp_strcmp               000000018000d160     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0002:00000168       __imp_strlen               000000018000d168     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0002:00000170       \177api-ms-win-crt-string-l1-1-0_NULL_THUNK_DATA 000000018000d170     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0002:00000178       __imp_mexPrintf_800        000000018000d178     libmex:libmex.dll
+ 0002:00000180       __imp_mexUnlock_800        000000018000d180     libmex:libmex.dll
+ 0002:00000188       __imp_mexCallMATLAB_800    000000018000d188     libmex:libmex.dll
+ 0002:00000190       __imp_mexWarnMsgTxt_800    000000018000d190     libmex:libmex.dll
+ 0002:00000198       __imp_mexIsLocked_800      000000018000d198     libmex:libmex.dll
+ 0002:000001a0       \177libmex_NULL_THUNK_DATA 000000018000d1a0     libmex:libmex.dll
+ 0002:000001a8       __imp_cgxertSetRuntimeInstance 000000018000d1a8     libmwcgxert:libmwcgxert.dll
+ 0002:000001b0       __imp_cgxertGetEMLRTCtx    000000018000d1b0     libmwcgxert:libmwcgxert.dll
+ 0002:000001b8       __imp_cgxertGetOutputPortSignal 000000018000d1b8     libmwcgxert:libmwcgxert.dll
+ 0002:000001c0       __imp_cgxertSetSimStateCompliance 000000018000d1c0     libmwcgxert:libmwcgxert.dll
+ 0002:000001c8       __imp_cgxertGetRuntimeInstance 000000018000d1c8     libmwcgxert:libmwcgxert.dll
+ 0002:000001d0       __imp_cgxertReportError    000000018000d1d0     libmwcgxert:libmwcgxert.dll
+ 0002:000001d8       __imp_cgxertInitMLPythonIFace 000000018000d1d8     libmwcgxert:libmwcgxert.dll
+ 0002:000001e0       \177libmwcgxert_NULL_THUNK_DATA 000000018000d1e0     libmwcgxert:libmwcgxert.dll
+ 0002:000001e8       __imp_suToCStr             000000018000d1e8     libmwstringutil:libmwstringutil.dll
+ 0002:000001f0       __imp_suMoveReturnedStringsToTopOfCallerStack 000000018000d1f0     libmwstringutil:libmwstringutil.dll
+ 0002:000001f8       __imp_suAddStackString     000000018000d1f8     libmwstringutil:libmwstringutil.dll
+ 0002:00000200       __imp_suStringStackSize    000000018000d200     libmwstringutil:libmwstringutil.dll
+ 0002:00000208       \177libmwstringutil_NULL_THUNK_DATA 000000018000d208     libmwstringutil:libmwstringutil.dll
+ 0002:00000210       __imp_mxGetPr_800          000000018000d210     libmx:libmx.dll
+ 0002:00000218       __imp_mxCreateDoubleScalar_800 000000018000d218     libmx:libmx.dll
+ 0002:00000220       __imp_mxCreateNumericMatrix_800 000000018000d220     libmx:libmx.dll
+ 0002:00000228       __imp_mxSetField_800       000000018000d228     libmx:libmx.dll
+ 0002:00000230       __imp_mxGetN_800           000000018000d230     libmx:libmx.dll
+ 0002:00000238       __imp_mxIsComplex_800      000000018000d238     libmx:libmx.dll
+ 0002:00000240       __imp_mxIsChar_800         000000018000d240     libmx:libmx.dll
+ 0002:00000248       __imp_mxIsNumeric_800      000000018000d248     libmx:libmx.dll
+ 0002:00000250       __imp_mxGetData_800        000000018000d250     libmx:libmx.dll
+ 0002:00000258       __imp_mxGetClassID_800     000000018000d258     libmx:libmx.dll
+ 0002:00000260       __imp_mxGetM_800           000000018000d260     libmx:libmx.dll
+ 0002:00000268       __imp_mxCalloc_800         000000018000d268     libmx:libmx.dll
+ 0002:00000270       __imp_mxCreateStructMatrix_800 000000018000d270     libmx:libmx.dll
+ 0002:00000278       __imp_mxCreateCellMatrix_800 000000018000d278     libmx:libmx.dll
+ 0002:00000280       __imp_mxCreateString_800   000000018000d280     libmx:libmx.dll
+ 0002:00000288       __imp_mxCreateDoubleMatrix_800 000000018000d288     libmx:libmx.dll
+ 0002:00000290       __imp_mxSetFieldByNumber_800 000000018000d290     libmx:libmx.dll
+ 0002:00000298       __imp_mxSetCell_800        000000018000d298     libmx:libmx.dll
+ 0002:000002a0       __imp_mxGetString_800      000000018000d2a0     libmx:libmx.dll
+ 0002:000002a8       \177libmx_NULL_THUNK_DATA  000000018000d2a8     libmx:libmx.dll
+ 0002:000002b0       __imp_PyModule_Type        000000018000d2b0     python310:python310.dll
+ 0002:000002b8       __imp_PyEval_EvalCode      000000018000d2b8     python310:python310.dll
+ 0002:000002c0       __imp_PyImport_ImportModule 000000018000d2c0     python310:python310.dll
+ 0002:000002c8       __imp_PyImport_AddModule   000000018000d2c8     python310:python310.dll
+ 0002:000002d0       __imp_Py_CompileStringExFlags 000000018000d2d0     python310:python310.dll
+ 0002:000002d8       __imp_PyErr_NormalizeException 000000018000d2d8     python310:python310.dll
+ 0002:000002e0       __imp_PyErr_Fetch          000000018000d2e0     python310:python310.dll
+ 0002:000002e8       __imp_PyErr_Clear          000000018000d2e8     python310:python310.dll
+ 0002:000002f0       __imp_PySequence_GetItem   000000018000d2f0     python310:python310.dll
+ 0002:000002f8       __imp_PyObject_CallMethod  000000018000d2f8     python310:python310.dll
+ 0002:00000300       __imp_PyGILState_Ensure    000000018000d300     python310:python310.dll
+ 0002:00000308       __imp_PyModule_GetDict     000000018000d308     python310:python310.dll
+ 0002:00000310       __imp_PyDict_SetItemString 000000018000d310     python310:python310.dll
+ 0002:00000318       __imp_PyDict_GetItemString 000000018000d318     python310:python310.dll
+ 0002:00000320       __imp_PyDict_Contains      000000018000d320     python310:python310.dll
+ 0002:00000328       __imp_PyGILState_Release   000000018000d328     python310:python310.dll
+ 0002:00000330       __imp_PyDict_Keys          000000018000d330     python310:python310.dll
+ 0002:00000338       __imp_PyDict_DelItem       000000018000d338     python310:python310.dll
+ 0002:00000340       __imp_PyDict_GetItem       000000018000d340     python310:python310.dll
+ 0002:00000348       __imp_PyList_Size          000000018000d348     python310:python310.dll
+ 0002:00000350       __imp_PyFloat_AsDouble     000000018000d350     python310:python310.dll
+ 0002:00000358       __imp_PyFloat_FromDouble   000000018000d358     python310:python310.dll
+ 0002:00000360       __imp_PyUnicode_AsUTF8     000000018000d360     python310:python310.dll
+ 0002:00000368       __imp_PyUnicode_Join       000000018000d368     python310:python310.dll
+ 0002:00000370       __imp_PyUnicode_FromString 000000018000d370     python310:python310.dll
+ 0002:00000378       __imp_Py_DecRef            000000018000d378     python310:python310.dll
+ 0002:00000380       __imp_Py_IncRef            000000018000d380     python310:python310.dll
+ 0002:00000388       __imp_PyObject_Str         000000018000d388     python310:python310.dll
+ 0002:00000390       __imp_PyType_IsSubtype     000000018000d390     python310:python310.dll
+ 0002:00000398       __imp_PyDict_Copy          000000018000d398     python310:python310.dll
+ 0002:000003a0       \177python310_NULL_THUNK_DATA 000000018000d3a0     python310:python310.dll
+ 0002:000003a8       __guard_check_icall_fptr   000000018000d3a8     MSVCRT:guard_support.obj
+ 0002:000003b0       __guard_xfg_check_icall_fptr 000000018000d3b0     MSVCRT:guard_support.obj
+ 0002:000003b8       __guard_dispatch_icall_fptr 000000018000d3b8     MSVCRT:guard_support.obj
+ 0002:000003c0       __guard_xfg_dispatch_icall_fptr 000000018000d3c0     MSVCRT:guard_support.obj
+ 0002:000003c8       __guard_xfg_table_dispatch_icall_fptr 000000018000d3c8     MSVCRT:guard_support.obj
+ 0002:000003d0       __castguard_check_failure_os_handled_fptr 000000018000d3d0     MSVCRT:guard_support.obj
+ 0002:000003d8       __guard_memcpy_fptr        000000018000d3d8     vcruntime:softmemtag.obj
+ 0002:000003e0       __xc_a                     000000018000d3e0     MSVCRT:initializers.obj
+ 0002:000003e8       __xc_z                     000000018000d3e8     MSVCRT:initializers.obj
+ 0002:000003f0       __xi_a                     000000018000d3f0     MSVCRT:initializers.obj
+ 0002:000003f8       __xi_z                     000000018000d3f8     MSVCRT:initializers.obj
+ 0002:00000400       __xp_a                     000000018000d400     MSVCRT:initializers.obj
+ 0002:00000408       __xp_z                     000000018000d408     MSVCRT:initializers.obj
+ 0002:00000410       __xt_a                     000000018000d410     MSVCRT:initializers.obj
+ 0002:00000418       __xt_z                     000000018000d418     MSVCRT:initializers.obj
+ 0002:00000420       DYNAMIC_DIMENSION_DEF      000000018000d420     Testing_cgxe_registry.obj
+ 0002:00000438       __real@0000000000000000    000000018000d438     Testing_cgxe_registry.obj
+ 0002:00000440       __real@4010000000000000    000000018000d440     Testing_cgxe_registry.obj
+ 0002:00000448       __real@41602cbca0000000    000000018000d448     Testing_cgxe_registry.obj
+ 0002:00000450       __real@4172d14da0000000    000000018000d450     Testing_cgxe_registry.obj
+ 0002:00000458       __real@41c75604cf000000    000000018000d458     Testing_cgxe_registry.obj
+ 0002:00000460       __real@41d567d098000000    000000018000d460     Testing_cgxe_registry.obj
+ 0002:00000468       __real@41d8d53c61400000    000000018000d468     Testing_cgxe_registry.obj
+ 0002:00000470       __real@41d94dc4c4800000    000000018000d470     Testing_cgxe_registry.obj
+ 0002:00000478       __real@41dae80752400000    000000018000d478     Testing_cgxe_registry.obj
+ 0002:00000480       __real@41dc67f553c00000    000000018000d480     Testing_cgxe_registry.obj
+ 0002:00000488       __real@41e1089957800000    000000018000d488     Testing_cgxe_registry.obj
+ 0002:00000490       __real@41e13401bfc00000    000000018000d490     Testing_cgxe_registry.obj
+ 0002:00000498       __real@41e2069ed9a00000    000000018000d498     Testing_cgxe_registry.obj
+ 0002:000004a0       __real@41e4b1ef9f600000    000000018000d4a0     Testing_cgxe_registry.obj
+ 0002:000004a8       __real@41e5b0b712600000    000000018000d4a8     Testing_cgxe_registry.obj
+ 0002:000004b0       __real@41e95c4739200000    000000018000d4b0     Testing_cgxe_registry.obj
+ 0002:000004b8       __real@41eb27a65ec00000    000000018000d4b8     Testing_cgxe_registry.obj
+ 0002:000004c0       __real@41ec44bf47400000    000000018000d4c0     Testing_cgxe_registry.obj
+ 0002:000004c8       __real@41ec611798a00000    000000018000d4c8     Testing_cgxe_registry.obj
+ 0002:000004d0       __real@bff0000000000000    000000018000d4d0     Testing_cgxe_registry.obj
+ 0002:000004e8       _pDefaultRawDllMain        000000018000d4e8     MSVCRT:dll_dllmain.obj
+ 0002:000004e8       _pRawDllMain               000000018000d4e8     MSVCRT:dll_dllmain.obj
+ 0002:000004f0       __xmm@ffffffffffffffffffffffffffffffff 000000018000d4f0     MSVCRT:utility.obj
+ 0002:00000500       _load_config_used          000000018000d500     MSVCRT:loadcfg.obj
+ 0002:00000680       __CastGuardVftablesStart   000000018000d680     MSVCRT:guard_support.obj
+ 0002:00000700       __CastGuardVftablesEnd     000000018000d700     MSVCRT:guard_support.obj
+ 0002:00000780       __volatile_metadata        000000018000d780     <linker-defined>
+ 0002:00000b18       __rtc_iaa                  000000018000db18     MSVCRT:initsect.obj
+ 0002:00000b20       __rtc_izz                  000000018000db20     MSVCRT:initsect.obj
+ 0002:00000b28       __rtc_taa                  000000018000db28     MSVCRT:initsect.obj
+ 0002:00000b30       __rtc_tzz                  000000018000db30     MSVCRT:initsect.obj
+ 0002:000013a8       __IMPORT_DESCRIPTOR_libmx  000000018000e3a8     libmx:libmx.dll
+ 0002:000013bc       __IMPORT_DESCRIPTOR_libmex 000000018000e3bc     libmex:libmex.dll
+ 0002:000013d0       __IMPORT_DESCRIPTOR_libmwcgxert 000000018000e3d0     libmwcgxert:libmwcgxert.dll
+ 0002:000013e4       __IMPORT_DESCRIPTOR_libmwstringutil 000000018000e3e4     libmwstringutil:libmwstringutil.dll
+ 0002:000013f8       __IMPORT_DESCRIPTOR_python310 000000018000e3f8     python310:python310.dll
+ 0002:0000140c       __IMPORT_DESCRIPTOR_KERNEL32 000000018000e40c     kernel32:KERNEL32.dll
+ 0002:00001420       __IMPORT_DESCRIPTOR_VCRUNTIME140 000000018000e420     vcruntime:VCRUNTIME140.dll
+ 0002:00001434       __IMPORT_DESCRIPTOR_api-ms-win-crt-string-l1-1-0 000000018000e434     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0002:00001448       __IMPORT_DESCRIPTOR_api-ms-win-crt-heap-l1-1-0 000000018000e448     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:0000145c       __IMPORT_DESCRIPTOR_api-ms-win-crt-stdio-l1-1-0 000000018000e45c     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:00001470       __IMPORT_DESCRIPTOR_api-ms-win-crt-runtime-l1-1-0 000000018000e470     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0002:00001484       __NULL_IMPORT_DESCRIPTOR   000000018000e484     libmx:libmx.dll
+ 0003:000001e0       DYNAMIC_DIMENSION          00000001800101e0     Testing_cgxe_registry.obj
+ 0003:000024b0       _fltused                   00000001800124b0     MSVCRT:fltused.obj
+ 0003:000024c0       __security_cookie          00000001800124c0     MSVCRT:gs_cookie.obj
+ 0003:00002500       __security_cookie_complement 0000000180012500     MSVCRT:gs_cookie.obj
+ 0003:00002508       __scrt_native_dllmain_reason 0000000180012508     MSVCRT:utility.obj
+ 0003:00002510       __isa_inverted             0000000180012510     MSVCRT:cpu_disp.obj
+ 0003:00002518       __isa_available            0000000180012518     MSVCRT:cpu_disp.obj
+ 0003:0000251c       __isa_enabled              000000018001251c     MSVCRT:cpu_disp.obj
+ 0003:00002520       __memset_fast_string_threshold 0000000180012520     MSVCRT:cpu_disp.obj
+ 0003:00002528       __memset_nt_threshold      0000000180012528     MSVCRT:cpu_disp.obj
+ 0003:00002530       __scrt_ucrt_dll_is_in_use  0000000180012530     MSVCRT:ucrt_stubs.obj
+ 0003:00002540       _Avx2WmemEnabledWeakValue  0000000180012540     Testing_cgxe.obj
+ 0003:00002ad0       ?__type_info_root_node@@3U__type_info_node@@A 0000000180012ad0     MSVCRT:tncleanup.obj
+ 0003:00002ae0       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@4_KA 0000000180012ae0     MSVCRT:default_local_stdio_options.obj
+ 0003:00002ae8       ?_OptionsStorage@?1??__local_stdio_scanf_options@@9@4_KA 0000000180012ae8     MSVCRT:default_local_stdio_options.obj
+ 0003:00002af0       __scrt_current_native_startup_state 0000000180012af0     MSVCRT:utility.obj
+ 0003:00002af8       __scrt_native_startup_lock 0000000180012af8     MSVCRT:utility.obj
+ 0003:00002b38       __scrt_debugger_hook_flag  0000000180012b38     MSVCRT:utility_desktop.obj
+ 0003:00002b40       __castguard_check_failure_user_handled_fptr 0000000180012b40     MSVCRT:guard_support.obj
+ 0003:00002b48       __avx10_version            0000000180012b48     MSVCRT:cpu_disp.obj
+ 0003:00002b4c       __favor                    0000000180012b4c     MSVCRT:cpu_disp.obj
+ 0003:00002b50       ?_OptionsStorage@?1??__local_stdio_printf_options@@9@9 0000000180012b50     <common>
+ 0003:00002b58       __dyn_tls_init_callback    0000000180012b58     <common>
+
+ entry point at        0001:0000ab38
+
+ Static symbols
+
+ 0000:00000000       .debug$S                   0000000180000000     Testing_cgxe.exp
+ 0000:00000000       _volmd                     0000000180000000     Testing_cgxe_registry.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:cpu_disp.obj
+ 0002:ffff3000       __guard_ehcont_?dllmain_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 0000000180000000     MSVCRT:dll_dllmain.obj
+ 0002:ffff3000       __guard_fids_?dllmain_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 0000000180000000     MSVCRT:dll_dllmain.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:gs_report.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:gs_report.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:gs_report.obj
+ 0002:ffff3000       __guard_fids__             0000000180000000     MSVCRT:guard_support.obj
+ 0002:ffff3000       __guard_fids__             0000000180000000     MSVCRT:guard_support.obj
+ 0002:ffff3000       __guard_fids__guard_icall_checks_enforced 0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:guard_support.obj
+ 0002:ffff3000       __guard_ehcont___scrt_is_nonwritable_in_current_image 0000000180000000     MSVCRT:utility.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:utility.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:utility.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:utility.obj
+ 0002:ffff3000       __guard_fids___scrt_set_unhandled_exception_filter 0000000180000000     MSVCRT:utility_desktop.obj
+ 0000:00000000       _volmd                     0000000180000000     MSVCRT:utility_desktop.obj
+ 0002:ffff3000       __guard_fids__             0000000180000000     vcruntime:softmemtag.obj
+ 0000:00000000       .debug$S                   0000000180000000     vcruntime:VCRUNTIME140.dll
+ 0000:00000000       .debug$S                   0000000180000000     vcruntime:VCRUNTIME140.dll
+ 0000:00000000       .debug$S                   0000000180000000     vcruntime:VCRUNTIME140.dll
+ 0000:00000000       .debug$S                   0000000180000000     vcruntime:VCRUNTIME140.dll
+ 0000:00000000       .debug$S                   0000000180000000     vcruntime:VCRUNTIME140.dll
+ 0000:00000000       .debug$S                   0000000180000000     vcruntime:VCRUNTIME140.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     kernel32:KERNEL32.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmex:libmex.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwcgxert:libmwcgxert.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwstringutil:libmwstringutil.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwstringutil:libmwstringutil.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwstringutil:libmwstringutil.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmwstringutil:libmwstringutil.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     libmx:libmx.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000000       .debug$S                   0000000180000000     python310:python310.dll
+ 0000:00000010       _volmd                     0000000180000010     Testing_cgxe_registry.obj
+ 0000:00000020       _volmd                     0000000180000020     Testing_cgxe_registry.obj
+ 0000:00000030       _volmd                     0000000180000030     Testing_cgxe_registry.obj
+ 0000:00000040       _volmd                     0000000180000040     Testing_cgxe_registry.obj
+ 0000:00000050       _volmd                     0000000180000050     Testing_cgxe_registry.obj
+ 0000:00000060       _volmd                     0000000180000060     Testing_cgxe_registry.obj
+ 0000:00000070       _volmd                     0000000180000070     Testing_cgxe_registry.obj
+ 0000:00000080       _volmd                     0000000180000080     Testing_cgxe_registry.obj
+ 0000:00000090       _volmd                     0000000180000090     Testing_cgxe_registry.obj
+ 0000:000000a0       _volmd                     00000001800000a0     Testing_cgxe_registry.obj
+ 0000:000000b0       _volmd                     00000001800000b0     Testing_cgxe_registry.obj
+ 0000:000000c0       _volmd                     00000001800000c0     Testing_cgxe_registry.obj
+ 0000:000000d0       _volmd                     00000001800000d0     Testing_cgxe_registry.obj
+ 0000:000000e0       _volmd                     00000001800000e0     Testing_cgxe_registry.obj
+ 0001:000000d0       _Py_IS_TYPE                00000001800010d0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000110       _PyObject_TypeCheck        0000000180001110 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000001c0       cgxe_mdl_start             00000001800011c0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000200       cgxe_mdl_initialize        0000000180001200 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000330       cgxe_mdl_outputs           0000000180001330 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000460       cgxe_mdl_update            0000000180001460 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000470       cgxe_mdl_derivative        0000000180001470 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000480       cgxe_mdl_enable            0000000180001480 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000490       cgxe_mdl_disable           0000000180001490 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000004a0       cgxe_mdl_terminate         00000001800014a0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000500       CheckPythonError           0000000180001500 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000810       PyObj_marshalIn            0000000180001810 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000890       getPyNamespaceDict         0000000180001890 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000008c0       assignToPyDict             00000001800018c0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000930       b_assignToPyDict           0000000180001930 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000009a0       execPyScript               00000001800019a0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000b90       getPyDictVal               0000000180001b90 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000bf0       b_getPyDictVal             0000000180001bf0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000c50       c_assignToPyDict           0000000180001c50 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000cc0       d_assignToPyDict           0000000180001cc0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000d30       b_execPyScript             0000000180001d30 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000f20       c_getPyDictVal             0000000180001f20 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000f80       d_getPyDictVal             0000000180001f80 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00000fe0       c_execPyScript             0000000180001fe0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000010e0       init_simulink_io_address   00000001800020e0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00001140       mdlOutputs_YQg0KPp9US1iRXoVC2Rf7F 0000000180002140 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00001180       mdlInitialize_YQg0KPp9US1iRXoVC2Rf7F 0000000180002180 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000011b0       mdlUpdate_YQg0KPp9US1iRXoVC2Rf7F 00000001800021b0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000011f0       mdlDerivatives_YQg0KPp9US1iRXoVC2Rf7F 00000001800021f0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00001220       mdlTerminate_YQg0KPp9US1iRXoVC2Rf7F 0000000180002220 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00001260       mdlEnable_YQg0KPp9US1iRXoVC2Rf7F 0000000180002260 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00001290       mdlDisable_YQg0KPp9US1iRXoVC2Rf7F 0000000180002290 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000012c0       mdlStart_YQg0KPp9US1iRXoVC2Rf7F 00000001800022c0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:000013d0       mdlProcessParameters_YQg0KPp9US1iRXoVC2Rf7F 00000001800023d0 f   m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0001:00003318       $LN147                     0000000180004318     Testing_cgxe_registry.obj
+ 0001:00004184       $LN22                      0000000180005184     Testing_cgxe_registry.obj
+ 0001:00004884       $LN26                      0000000180005884     Testing_cgxe_registry.obj
+ 0001:00004f64       $LN24                      0000000180005f64     Testing_cgxe_registry.obj
+ 0001:00005c9c       $LN30                      0000000180006c9c     Testing_cgxe_registry.obj
+ 0001:00008680       mdlStart                   0000000180009680 f   Testing_cgxe_registry.obj
+ 0001:000086c0       mdlInitializeConditions    00000001800096c0 f   Testing_cgxe_registry.obj
+ 0001:000086f0       mdlUpdate                  00000001800096f0 f   Testing_cgxe_registry.obj
+ 0001:00008720       mdlOutputs                 0000000180009720 f   Testing_cgxe_registry.obj
+ 0001:00008750       mdlTerminate               0000000180009750 f   Testing_cgxe_registry.obj
+ 0001:00008780       mdlInitializeSizes         0000000180009780 f   Testing_cgxe_registry.obj
+ 0001:00008790       mdlInitializeSampleTimes   0000000180009790 f   Testing_cgxe_registry.obj
+ 0001:000087a0       cgxe_get_supported_modules 00000001800097a0 f   Testing_cgxe_registry.obj
+ 0001:00008870       cgxe_process_get_checksums 0000000180009870 f   Testing_cgxe_registry.obj
+ 0001:00008c10       cgxe_mex_unlock_call       0000000180009c10 f   Testing_cgxe_registry.obj
+ 0001:00008c50       cgxe_unpack_simstruct      0000000180009c50 f   Testing_cgxe_registry.obj
+ 0001:00008cf0       cgxe_get_sim_state         0000000180009cf0 f   Testing_cgxe_registry.obj
+ 0001:00008d60       cgxe_set_sim_state         0000000180009d60 f   Testing_cgxe_registry.obj
+ 0001:00008de0       cgxe_get_BuildInfoUpdate   0000000180009de0 f   Testing_cgxe_registry.obj
+ 0001:00008eb0       cgxe_get_fallback_info     0000000180009eb0 f   Testing_cgxe_registry.obj
+ 0001:00008f80       ProcessMexSfunctionCmdLineCall 0000000180009f80 f   Testing_cgxe_registry.obj
+ 0001:000091c0       mdlZeroCrossings           000000018000a1c0 f   Testing_cgxe_registry.obj
+ 0001:00009210       mdlGetTimeOfNextVarHit     000000018000a210 f   Testing_cgxe_registry.obj
+ 0001:00009260       _RegNumInputPortsCB        000000018000a260 f   Testing_cgxe_registry.obj
+ 0001:000092e0       _RegNumOutputPortsCB       000000018000a2e0 f   Testing_cgxe_registry.obj
+ 0001:00009360       _CreateSimStruct           000000018000a360 f   Testing_cgxe_registry.obj
+ 0001:00009590       _ProcessMexSfunctionCmdLineCall 000000018000a590 f   Testing_cgxe_registry.obj
+ 0001:00009f20       ReportIndexOutOfBoundsError 000000018000af20 f   Testing_cgxe_registry.obj
+ 0001:0000a66c       capture_current_context    000000018000b66c f   MSVCRT:gs_report.obj
+ 0001:0000a6dc       capture_previous_context   000000018000b6dc f   MSVCRT:gs_report.obj
+ 0001:0000a7d0       $$000000                   000000018000b7d0     MSVCRT:amdsecgs.obj
+ 0001:0000a800       ?dllmain_crt_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 000000018000b800 f   MSVCRT:dll_dllmain.obj
+ 0001:0000a850       ?dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z 000000018000b850 f   MSVCRT:dll_dllmain.obj
+ 0001:0000a968       ?dllmain_crt_process_detach@@YAH_N@Z 000000018000b968 f   MSVCRT:dll_dllmain.obj
+ 0001:0000a9ec       ?dllmain_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 000000018000b9ec f   MSVCRT:dll_dllmain.obj
+ 0001:0000ab14       ?dllmain_raw@@YAHQEAUHINSTANCE__@@KQEAX@Z 000000018000bb14 f   MSVCRT:dll_dllmain.obj
+ 0001:0000ab78       __get_entropy              000000018000bb78 f   MSVCRT:gs_support.obj
+ 0001:0000ad10       ?find_pe_section@@YAPEAU_IMAGE_SECTION_HEADER@@QEAE_K@Z 000000018000bd10 f   MSVCRT:utility.obj
+ 0001:0000ad64       ?is_potentially_valid_image_base@@YA_NQEAX@Z 000000018000bd64 f   MSVCRT:utility.obj
+ 0001:0000b4a0       __castguard_check_failure_os_handled_wrapper 000000018000c4a0 f   MSVCRT:guard_support.obj
+ 0001:0000b4f0       __castguard_check_failure_user_handled_wrapper 000000018000c4f0 f   MSVCRT:guard_support.obj
+ 0001:0000b50c       __castguard_compat_check   000000018000c50c f   MSVCRT:guard_support.obj
+ 0001:0000b648       __castguard_slow_path_compat_check 000000018000c648 f   MSVCRT:guard_support.obj
+ 0001:0000ba40       $$000000                   000000018000ca40     MSVCRT:guard_dispatch.obj
+ 0001:0000ba60       $$000000                   000000018000ca60     MSVCRT:guard_xfg_dispatch.obj
+ 0001:0000ba76       ?fin$0@?0??dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z@4HA 000000018000ca76 f   MSVCRT:dll_dllmain.obj
+ 0001:0000ba8d       ?fin$0@?0??dllmain_crt_process_detach@@YAH_N@Z@4HA 000000018000ca8d f   MSVCRT:dll_dllmain.obj
+ 0001:0000baa6       ?fin$1@?0??dllmain_crt_process_detach@@YAH_N@Z@4HA 000000018000caa6 f   MSVCRT:dll_dllmain.obj
+ 0001:0000baba       ?filt$0@?0??dllmain_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z@4HA 000000018000caba f   MSVCRT:dll_dllmain.obj
+ 0001:0000baf0       __scrt_is_nonwritable_in_current_image$filt$0 000000018000caf0 f   MSVCRT:utility.obj
+ 0002:000004d8       GS_ExceptionPointers       000000018000d4d8     MSVCRT:gs_report.obj
+ 0002:00000b38       $unwind$cgxe_Testing_method_dispatcher 000000018000db38     Testing_cgxe.obj
+ 0002:00000b40       $unwind$_Py_IS_TYPE        000000018000db40     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b48       $unwind$_PyObject_TypeCheck 000000018000db48     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b50       $unwind$method_dispatcher_YQg0KPp9US1iRXoVC2Rf7F 000000018000db50     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b58       $unwind$cgxe_mdl_start     000000018000db58     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b60       $unwind$cgxe_mdl_initialize 000000018000db60     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b68       $unwind$cgxe_mdl_outputs   000000018000db68     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b70       $unwind$cgxe_mdl_terminate 000000018000db70     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b78       $unwind$CheckPythonError   000000018000db78     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b80       $unwind$PyObj_marshalIn    000000018000db80     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b88       $unwind$getPyNamespaceDict 000000018000db88     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b90       $unwind$assignToPyDict     000000018000db90     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000b98       $unwind$b_assignToPyDict   000000018000db98     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000ba0       $unwind$execPyScript       000000018000dba0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000ba8       $unwind$getPyDictVal       000000018000dba8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bb0       $unwind$b_getPyDictVal     000000018000dbb0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bb8       $unwind$c_assignToPyDict   000000018000dbb8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bc0       $unwind$d_assignToPyDict   000000018000dbc0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bc8       $unwind$b_execPyScript     000000018000dbc8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bd0       $unwind$c_getPyDictVal     000000018000dbd0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bd8       $unwind$d_getPyDictVal     000000018000dbd8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000be0       $unwind$c_execPyScript     000000018000dbe0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000be8       $unwind$init_simulink_io_address 000000018000dbe8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bf0       $unwind$mdlOutputs_YQg0KPp9US1iRXoVC2Rf7F 000000018000dbf0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000bf8       $unwind$mdlInitialize_YQg0KPp9US1iRXoVC2Rf7F 000000018000dbf8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c00       $unwind$mdlUpdate_YQg0KPp9US1iRXoVC2Rf7F 000000018000dc00     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c08       $unwind$mdlDerivatives_YQg0KPp9US1iRXoVC2Rf7F 000000018000dc08     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c10       $unwind$mdlTerminate_YQg0KPp9US1iRXoVC2Rf7F 000000018000dc10     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c18       $unwind$mdlEnable_YQg0KPp9US1iRXoVC2Rf7F 000000018000dc18     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c20       $unwind$mdlDisable_YQg0KPp9US1iRXoVC2Rf7F 000000018000dc20     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c28       $unwind$mdlStart_YQg0KPp9US1iRXoVC2Rf7F 000000018000dc28     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c30       $unwind$cgxe_YQg0KPp9US1iRXoVC2Rf7F_BuildInfoUpdate 000000018000dc30     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c38       $unwind$cgxe_YQg0KPp9US1iRXoVC2Rf7F_fallback_info 000000018000dc38     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0002:00000c40       $unwind$_vsnprintf_l       000000018000dc40     Testing_cgxe_registry.obj
+ 0002:00000c48       $unwind$_vsprintf_l        000000018000dc48     Testing_cgxe_registry.obj
+ 0002:00000c50       $unwind$sprintf            000000018000dc50     Testing_cgxe_registry.obj
+ 0002:00000c58       $unwind$mexFunction        000000018000dc58     Testing_cgxe_registry.obj
+ 0002:00000c68       $unwind$_ssSetInputPortDirectFeedThroughFcn 000000018000dc68     Testing_cgxe_registry.obj
+ 0002:00000c78       $unwind$_ssSetRWorkValueFcn 000000018000dc78     Testing_cgxe_registry.obj
+ 0002:00000c80       $unwind$_ssGetRWorkValueFcn 000000018000dc80     Testing_cgxe_registry.obj
+ 0002:00000c88       $unwind$_ssSetIWorkValueFcn 000000018000dc88     Testing_cgxe_registry.obj
+ 0002:00000c90       $unwind$_ssGetIWorkValueFcn 000000018000dc90     Testing_cgxe_registry.obj
+ 0002:00000c98       $unwind$_ssSetPWorkValueFcn 000000018000dc98     Testing_cgxe_registry.obj
+ 0002:00000ca0       $unwind$_ssGetPWorkValueFcn 000000018000dca0     Testing_cgxe_registry.obj
+ 0002:00000ca8       $unwind$_ssGetInputPortSignalFcn 000000018000dca8     Testing_cgxe_registry.obj
+ 0002:00000cb8       $unwind$_ssGetInputPortBufferDstPortFcn 000000018000dcb8     Testing_cgxe_registry.obj
+ 0002:00000cc0       $unwind$_ssGetInputPortSignalPtrsFcn 000000018000dcc0     Testing_cgxe_registry.obj
+ 0002:00000cd0       $unwind$ssGetParameterTuningCompliance 000000018000dcd0     Testing_cgxe_registry.obj
+ 0002:00000cd8       $unwind$_ssReadInputStringFcn 000000018000dcd8     Testing_cgxe_registry.obj
+ 0002:00000ce0       $unwind$ssGetDTypeIdFromMxArray 000000018000dce0     Testing_cgxe_registry.obj
+ 0002:00000ce8       $unwind$ssWriteRTWMx2dMatParam 000000018000dce8     Testing_cgxe_registry.obj
+ 0002:00000cf0       $unwind$ssWriteRTWMxVectParam 000000018000dcf0     Testing_cgxe_registry.obj
+ 0002:00000cf8       $unwind$ssWriteRTWParameters 000000018000dcf8     Testing_cgxe_registry.obj
+ 0002:00000d00       $unwind$ssWriteRTWParamSettings 000000018000dd00     Testing_cgxe_registry.obj
+ 0002:00000d08       $unwind$ssWriteRTWStr      000000018000dd08     Testing_cgxe_registry.obj
+ 0002:00000d10       $unwind$ssWriteRTWWorkVect 000000018000dd10     Testing_cgxe_registry.obj
+ 0002:00000d24       $unwind$ssWarning          000000018000dd24     Testing_cgxe_registry.obj
+ 0002:00000d38       $unwind$ssGetRootSS        000000018000dd38     Testing_cgxe_registry.obj
+ 0002:00000d40       $unwind$ssGetParentSS      000000018000dd40     Testing_cgxe_registry.obj
+ 0002:00000d48       $unwind$ssWriteRTWNameValuePair 000000018000dd48     Testing_cgxe_registry.obj
+ 0002:00000d50       $unwind$_ssSetInputPortMatrixDimensions 000000018000dd50     Testing_cgxe_registry.obj
+ 0002:00000d5c       $unwind$_ssSetOutputPortMatrixDimensions 000000018000dd5c     Testing_cgxe_registry.obj
+ 0002:00000d68       $unwind$_ssSetInputPortVectorDimension 000000018000dd68     Testing_cgxe_registry.obj
+ 0002:00000d74       $unwind$_ssSetOutputPortVectorDimension 000000018000dd74     Testing_cgxe_registry.obj
+ 0002:00000d80       $unwind$ssIsRunTimeParamTunable 000000018000dd80     Testing_cgxe_registry.obj
+ 0002:00000d88       $unwind$ssGetSFuncBlockHandle 000000018000dd88     Testing_cgxe_registry.obj
+ 0002:00000d90       $unwind$_ssGetCallSystemNumFcnCallDestinations 000000018000dd90     Testing_cgxe_registry.obj
+ 0002:00000d98       $unwind$_ssGetCurrentInputPortWidth 000000018000dd98     Testing_cgxe_registry.obj
+ 0002:00000da0       $unwind$_ssGetCurrentOutputPortWidth 000000018000dda0     Testing_cgxe_registry.obj
+ 0002:00000da8       $unwind$ssGetIsZeroCrossControlDisabled 000000018000dda8     Testing_cgxe_registry.obj
+ 0002:00000db0       $unwind$ssSetIsInputPortUsedForContZcSignal 000000018000ddb0     Testing_cgxe_registry.obj
+ 0002:00000db8       $unwind$ssSetZcSignalIsZcElementDisc 000000018000ddb8     Testing_cgxe_registry.obj
+ 0002:00000dc8       $unwind$ssSetZcSignalName  000000018000ddc8     Testing_cgxe_registry.obj
+ 0002:00000dd0       $unwind$ssSetZcSignalWidth 000000018000ddd0     Testing_cgxe_registry.obj
+ 0002:00000dd8       $unwind$ssSetZcSignalZcEventType 000000018000ddd8     Testing_cgxe_registry.obj
+ 0002:00000de0       $unwind$ssSetZcSignalType  000000018000dde0     Testing_cgxe_registry.obj
+ 0002:00000de8       $unwind$ssSetZcSignalZcTol 000000018000dde8     Testing_cgxe_registry.obj
+ 0002:00000df0       $unwind$ssSetZcSignalNeedsEventNotification 000000018000ddf0     Testing_cgxe_registry.obj
+ 0002:00000df8       $unwind$ssCreateAndAddZcSignalInfo 000000018000ddf8     Testing_cgxe_registry.obj
+ 0002:00000e00       $unwind$ssCloneAndAddZcSignalInfo 000000018000de00     Testing_cgxe_registry.obj
+ 0002:00000e08       $unwind$ssGetNumZcSignals  000000018000de08     Testing_cgxe_registry.obj
+ 0002:00000e10       $unwind$ssGetZcSignalVector 000000018000de10     Testing_cgxe_registry.obj
+ 0002:00000e18       $unwind$ssGetZcSignalName  000000018000de18     Testing_cgxe_registry.obj
+ 0002:00000e20       $unwind$ssGetZcSignalWidth 000000018000de20     Testing_cgxe_registry.obj
+ 0002:00000e28       $unwind$ssGetZcSignalZcEventType 000000018000de28     Testing_cgxe_registry.obj
+ 0002:00000e30       $unwind$ssGetZcSignalZcEvents 000000018000de30     Testing_cgxe_registry.obj
+ 0002:00000e38       $unwind$ssGetZcSignalType  000000018000de38     Testing_cgxe_registry.obj
+ 0002:00000e40       $unwind$ssGetZcSignalZcTol 000000018000de40     Testing_cgxe_registry.obj
+ 0002:00000e48       $unwind$ssGetZcSignalNeedsEventNotification 000000018000de48     Testing_cgxe_registry.obj
+ 0002:00000e50       $unwind$ssGetZcSignalIsZcElementDisc 000000018000de50     Testing_cgxe_registry.obj
+ 0002:00000e60       $unwind$ssGetIsInputPortElementContinuous 000000018000de60     Testing_cgxe_registry.obj
+ 0002:00000e70       $unwind$_ssGetAbsTol       000000018000de70     Testing_cgxe_registry.obj
+ 0002:00000e78       $unwind$_ssSetInputPortReusableFcn 000000018000de78     Testing_cgxe_registry.obj
+ 0002:00000e80       $unwind$_ssSetOutputPortReusableFcn 000000018000de80     Testing_cgxe_registry.obj
+ 0002:00000e88       $unwind$_ssSetSymbolicDimsSupport 000000018000de88     Testing_cgxe_registry.obj
+ 0002:00000e90       $unwind$_ssRegisterSymbolicDimsExpr 000000018000de90     Testing_cgxe_registry.obj
+ 0002:00000e98       $unwind$_ssRegisterSymbolicDimsMATLABExpr 000000018000de98     Testing_cgxe_registry.obj
+ 0002:00000ea0       $unwind$_ssRegisterSymbolicDims 000000018000dea0     Testing_cgxe_registry.obj
+ 0002:00000ea8       $unwind$_ssRegisterSymbolicDimsString 000000018000dea8     Testing_cgxe_registry.obj
+ 0002:00000eb0       $unwind$_ssRegisterSymbolicDimsIntValue 000000018000deb0     Testing_cgxe_registry.obj
+ 0002:00000eb8       $unwind$_ssRegisterSymbolicEqualRelation 000000018000deb8     Testing_cgxe_registry.obj
+ 0002:00000ec0       $unwind$_ssRegisterSymbolicEqualValue 000000018000dec0     Testing_cgxe_registry.obj
+ 0002:00000ec8       $unwind$_ssAmendLeadingSymbolicDims 000000018000dec8     Testing_cgxe_registry.obj
+ 0002:00000ed0       $unwind$_ssAmendTrailingSymbolicDims 000000018000ded0     Testing_cgxe_registry.obj
+ 0002:00000ed8       $unwind$_ssRegisterSymbolicDimsPlus 000000018000ded8     Testing_cgxe_registry.obj
+ 0002:00000ee0       $unwind$_ssRegisterSymbolicDimsMinus 000000018000dee0     Testing_cgxe_registry.obj
+ 0002:00000ee8       $unwind$_ssRegisterSymbolicDimsMultiply 000000018000dee8     Testing_cgxe_registry.obj
+ 0002:00000ef0       $unwind$_ssRegisterSymbolicDimsDivide 000000018000def0     Testing_cgxe_registry.obj
+ 0002:00000ef8       $unwind$_ssGetNumSymbolicDims 000000018000def8     Testing_cgxe_registry.obj
+ 0002:00000f00       $unwind$_ssGetSymbolicDim  000000018000df00     Testing_cgxe_registry.obj
+ 0002:00000f08       $unwind$_ssSetInputPortSymbolicDimsId 000000018000df08     Testing_cgxe_registry.obj
+ 0002:00000f10       $unwind$_ssGetCompInputPortSymbolicDimsId 000000018000df10     Testing_cgxe_registry.obj
+ 0002:00000f18       $unwind$_ssSetCompInputPortSymbolicDimsId 000000018000df18     Testing_cgxe_registry.obj
+ 0002:00000f20       $unwind$_ssSetOutputPortSymbolicDimsId 000000018000df20     Testing_cgxe_registry.obj
+ 0002:00000f28       $unwind$_ssGetCompOutputPortSymbolicDimsId 000000018000df28     Testing_cgxe_registry.obj
+ 0002:00000f30       $unwind$_ssSetCompOutputPortSymbolicDimsId 000000018000df30     Testing_cgxe_registry.obj
+ 0002:00000f38       $unwind$_ssGetDWorkSymbolicDimsId 000000018000df38     Testing_cgxe_registry.obj
+ 0002:00000f40       $unwind$_ssSetDWorkSymbolicDimsId 000000018000df40     Testing_cgxe_registry.obj
+ 0002:00000f48       $unwind$_ssGetCompDWorkSymbolicDimsId 000000018000df48     Testing_cgxe_registry.obj
+ 0002:00000f50       $unwind$_ssSetCompDWorkSymbolicDimsId 000000018000df50     Testing_cgxe_registry.obj
+ 0002:00000f58       $unwind$_ssCreateSLCGStringBuffer 000000018000df58     Testing_cgxe_registry.obj
+ 0002:00000f60       $unwind$_ssAddToSLCGStringBuffer 000000018000df60     Testing_cgxe_registry.obj
+ 0002:00000f68       $unwind$_ssGetPointerContainedData 000000018000df68     Testing_cgxe_registry.obj
+ 0002:00000f70       $unwind$_ssGetPointerContainedDataWidth 000000018000df70     Testing_cgxe_registry.obj
+ 0002:00000f78       $unwind$_ssRegisterDynamicArrayDataTypeFcn 000000018000df78     Testing_cgxe_registry.obj
+ 0002:00000f80       $unwind$_ssGetDynamicArrayContainedDataCurrentWidthFcn 000000018000df80     Testing_cgxe_registry.obj
+ 0002:00000f88       $unwind$_ssGetDynamicArrayContainedDataFcn 000000018000df88     Testing_cgxe_registry.obj
+ 0002:00000f90       $unwind$_ssGetInputPortDynamicArrayDataFcn 000000018000df90     Testing_cgxe_registry.obj
+ 0002:00000f98       $unwind$_ssGetOutputPortDynamicArrayDataFcn 000000018000df98     Testing_cgxe_registry.obj
+ 0002:00000fa0       $unwind$_ssGetInputPortDynamicArrayContainedDataFcn 000000018000dfa0     Testing_cgxe_registry.obj
+ 0002:00000fa8       $unwind$_ssGetOutputPortDynamicArrayContainedDataFcn 000000018000dfa8     Testing_cgxe_registry.obj
+ 0002:00000fb0       $unwind$_ssGetDynamicArrayDWorkContainedDataFcn 000000018000dfb0     Testing_cgxe_registry.obj
+ 0002:00000fb8       $unwind$mdlStart           000000018000dfb8     Testing_cgxe_registry.obj
+ 0002:00000fc0       $unwind$mdlInitializeConditions 000000018000dfc0     Testing_cgxe_registry.obj
+ 0002:00000fc8       $unwind$mdlUpdate          000000018000dfc8     Testing_cgxe_registry.obj
+ 0002:00000fd0       $unwind$mdlOutputs         000000018000dfd0     Testing_cgxe_registry.obj
+ 0002:00000fd8       $unwind$mdlTerminate       000000018000dfd8     Testing_cgxe_registry.obj
+ 0002:00000fe0       $unwind$cgxe_get_supported_modules 000000018000dfe0     Testing_cgxe_registry.obj
+ 0002:00000fe8       $unwind$cgxe_process_get_checksums 000000018000dfe8     Testing_cgxe_registry.obj
+ 0002:00000ff8       $unwind$cgxe_mex_unlock_call 000000018000dff8     Testing_cgxe_registry.obj
+ 0002:00001000       $unwind$cgxe_unpack_simstruct 000000018000e000     Testing_cgxe_registry.obj
+ 0002:00001008       $unwind$cgxe_get_sim_state 000000018000e008     Testing_cgxe_registry.obj
+ 0002:00001010       $unwind$cgxe_set_sim_state 000000018000e010     Testing_cgxe_registry.obj
+ 0002:00001018       $unwind$cgxe_get_BuildInfoUpdate 000000018000e018     Testing_cgxe_registry.obj
+ 0002:00001028       $unwind$cgxe_get_fallback_info 000000018000e028     Testing_cgxe_registry.obj
+ 0002:00001038       $unwind$ProcessMexSfunctionCmdLineCall 000000018000e038     Testing_cgxe_registry.obj
+ 0002:00001048       $unwind$_RegNumInputPortsCB 000000018000e048     Testing_cgxe_registry.obj
+ 0002:00001050       $unwind$_RegNumOutputPortsCB 000000018000e050     Testing_cgxe_registry.obj
+ 0002:00001058       $unwind$_CreateSimStruct   000000018000e058     Testing_cgxe_registry.obj
+ 0002:00001060       $unwind$_ProcessMexSfunctionCmdLineCall 000000018000e060     Testing_cgxe_registry.obj
+ 0002:00001070       $unwind$ReportIndexOutOfBoundsError 000000018000e070     Testing_cgxe_registry.obj
+ 0002:00001080       $unwind$__report_securityfailure 000000018000e080     MSVCRT:gs_report.obj
+ 0002:00001088       $unwind$__report_securityfailureEx 000000018000e088     MSVCRT:gs_report.obj
+ 0002:00001090       $unwind$__report_rangecheckfailure 000000018000e090     MSVCRT:gs_report.obj
+ 0002:00001098       $unwind$__report_gsfailure 000000018000e098     MSVCRT:gs_report.obj
+ 0002:000010a0       $unwind$capture_current_context 000000018000e0a0     MSVCRT:gs_report.obj
+ 0002:000010ac       $unwind$capture_previous_context 000000018000e0ac     MSVCRT:gs_report.obj
+ 0002:000010b8       $unwind$__raise_securityfailure 000000018000e0b8     MSVCRT:gs_report.obj
+ 0002:000010c0       $unwind$__GSHandlerCheckCommon 000000018000e0c0     MSVCRT:gshandler.obj
+ 0002:000010c8       $unwind$__GSHandlerCheck   000000018000e0c8     MSVCRT:gshandler.obj
+ 0002:000010d0       $xdatasym                  000000018000e0d0     MSVCRT:amdsecgs.obj
+ 0002:000010d4       $unwind$?dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z 000000018000e0d4     MSVCRT:dll_dllmain.obj
+ 0002:00001110       $unwind$?fin$0@?0??dllmain_crt_process_attach@@YAHQEAUHINSTANCE__@@QEAX@Z@4HA 000000018000e110     MSVCRT:dll_dllmain.obj
+ 0002:00001118       $unwind$?dllmain_crt_process_detach@@YAH_N@Z 000000018000e118     MSVCRT:dll_dllmain.obj
+ 0002:0000116c       $unwind$?fin$0@?0??dllmain_crt_process_detach@@YAH_N@Z@4HA 000000018000e16c     MSVCRT:dll_dllmain.obj
+ 0002:00001174       $unwind$?fin$1@?0??dllmain_crt_process_detach@@YAH_N@Z@4HA 000000018000e174     MSVCRT:dll_dllmain.obj
+ 0002:0000117c       $unwind$?dllmain_crt_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 000000018000e17c     MSVCRT:dll_dllmain.obj
+ 0002:00001184       $unwind$?dllmain_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z 000000018000e184     MSVCRT:dll_dllmain.obj
+ 0002:000011ac       $unwind$?filt$0@?0??dllmain_dispatch@@YAHQEAUHINSTANCE__@@KQEAX@Z@4HA 000000018000e1ac     MSVCRT:dll_dllmain.obj
+ 0002:000011b4       $unwind$_DllMainCRTStartup 000000018000e1b4     MSVCRT:dll_dllmain.obj
+ 0002:000011c4       $unwind$__security_init_cookie 000000018000e1c4     MSVCRT:gs_support.obj
+ 0002:000011d0       $unwind$__get_entropy      000000018000e1d0     MSVCRT:gs_support.obj
+ 0002:000011d8       $unwind$DllMain            000000018000e1d8     MSVCRT:dll_dllmain_stub.obj
+ 0002:000011e0       $unwind$__scrt_initialize_default_local_stdio_options 000000018000e1e0     MSVCRT:default_local_stdio_options.obj
+ 0002:000011e8       $unwind$atexit             000000018000e1e8     MSVCRT:utility.obj
+ 0002:000011f0       $unwind$_onexit            000000018000e1f0     MSVCRT:utility.obj
+ 0002:000011f8       $unwind$__scrt_is_nonwritable_in_current_image 000000018000e1f8     MSVCRT:utility.obj
+ 0002:00001218       $unwind$__scrt_is_nonwritable_in_current_image$filt$0 000000018000e218     MSVCRT:utility.obj
+ 0002:00001220       $unwind$__scrt_acquire_startup_lock 000000018000e220     MSVCRT:utility.obj
+ 0002:00001228       $unwind$__scrt_release_startup_lock 000000018000e228     MSVCRT:utility.obj
+ 0002:00001230       $unwind$__scrt_initialize_crt 000000018000e230     MSVCRT:utility.obj
+ 0002:00001238       $unwind$__scrt_uninitialize_crt 000000018000e238     MSVCRT:utility.obj
+ 0002:00001240       $unwind$__scrt_initialize_onexit_tables 000000018000e240     MSVCRT:utility.obj
+ 0002:00001248       $unwind$__scrt_dllmain_exception_filter 000000018000e248     MSVCRT:utility.obj
+ 0002:0000125c       $unwind$__scrt_dllmain_before_initialize_c 000000018000e25c     MSVCRT:utility.obj
+ 0002:00001264       $unwind$__scrt_dllmain_after_initialize_c 000000018000e264     MSVCRT:utility.obj
+ 0002:0000126c       $unwind$__scrt_dllmain_uninitialize_c 000000018000e26c     MSVCRT:utility.obj
+ 0002:00001274       $unwind$__scrt_dllmain_uninitialize_critical 000000018000e274     MSVCRT:utility.obj
+ 0002:0000127c       $unwind$__scrt_dllmain_crt_thread_attach 000000018000e27c     MSVCRT:utility.obj
+ 0002:00001284       $unwind$__scrt_dllmain_crt_thread_detach 000000018000e284     MSVCRT:utility.obj
+ 0002:0000128c       $unwind$?configure_argv@__scrt_narrow_argv_policy@@SAHXZ 000000018000e28c     MSVCRT:utility.obj
+ 0002:00001294       $unwind$__scrt_get_show_window_mode 000000018000e294     MSVCRT:utility_desktop.obj
+ 0002:0000129c       $unwind$__scrt_is_managed_app 000000018000e29c     MSVCRT:utility_desktop.obj
+ 0002:000012a4       $unwind$__scrt_fastfail    000000018000e2a4     MSVCRT:utility_desktop.obj
+ 0002:000012b4       $unwind$__scrt_unhandled_exception_filter 000000018000e2b4     MSVCRT:utility_desktop.obj
+ 0002:000012c0       $unwind$_RTC_Initialize    000000018000e2c0     MSVCRT:initsect.obj
+ 0002:000012cc       $unwind$_RTC_Terminate     000000018000e2cc     MSVCRT:initsect.obj
+ 0002:000012d8       $unwind$__castguard_check_failure_os_handled_wrapper 000000018000e2d8     MSVCRT:guard_support.obj
+ 0002:000012e0       $unwind$__castguard_check_failure_user_handled_wrapper 000000018000e2e0     MSVCRT:guard_support.obj
+ 0002:000012e8       $unwind$__castguard_check_failure_os_handled 000000018000e2e8     MSVCRT:guard_support.obj
+ 0002:000012f0       $unwind$__castguard_check_failure_user_handled 000000018000e2f0     MSVCRT:guard_support.obj
+ 0002:000012f8       $unwind$__castguard_slow_path_check_os_handled 000000018000e2f8     MSVCRT:guard_support.obj
+ 0002:00001300       $unwind$__castguard_slow_path_check_user_handled 000000018000e300     MSVCRT:guard_support.obj
+ 0002:00001308       $unwind$__isa_available_init 000000018000e308     MSVCRT:cpu_disp.obj
+ 0002:00001320       $xdatasym                  000000018000e320     MSVCRT:guard_dispatch.obj
+ 0002:00001328       $xdatasym                  000000018000e328     MSVCRT:guard_xfg_dispatch.obj
+ 0002:00001330       .edata                     000000018000e330     Testing_cgxe.exp
+ 0002:00001358       rgpv                       000000018000e358     Testing_cgxe.exp
+ 0002:00001360       rgszName                   000000018000e360     Testing_cgxe.exp
+ 0002:00001368       rgwOrd                     000000018000e368     Testing_cgxe.exp
+ 0002:0000136c       szName                     000000018000e36c     Testing_cgxe.exp
+ 0002:00001380       $N00001                    000000018000e380     Testing_cgxe.exp
+ 0002:0000138c       $N00002                    000000018000e38c     Testing_cgxe.exp
+ 0002:000019c0       .idata$6                   000000018000e9c0     libmx:libmx.dll
+ 0002:00001a24       .idata$6                   000000018000ea24     libmex:libmex.dll
+ 0002:00001ae4       .idata$6                   000000018000eae4     libmwcgxert:libmwcgxert.dll
+ 0002:00001b52       .idata$6                   000000018000eb52     libmwstringutil:libmwstringutil.dll
+ 0002:00001da6       .idata$6                   000000018000eda6     python310:python310.dll
+ 0002:00001f40       .idata$6                   000000018000ef40     kernel32:KERNEL32.dll
+ 0002:00001fce       .idata$6                   000000018000efce     vcruntime:VCRUNTIME140.dll
+ 0002:0000211c       .idata$6                   000000018000f11c     ucrt:api-ms-win-crt-string-l1-1-0.dll
+ 0002:0000213e       .idata$6                   000000018000f13e     ucrt:api-ms-win-crt-heap-l1-1-0.dll
+ 0002:0000215e       .idata$6                   000000018000f15e     ucrt:api-ms-win-crt-stdio-l1-1-0.dll
+ 0002:0000217e       .idata$6                   000000018000f17e     ucrt:api-ms-win-crt-runtime-l1-1-0.dll
+ 0003:00000000       $SG49143                   0000000180010000     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000004       $SG49144                   0000000180010004     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000008       $SG49146                   0000000180010008     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:0000000c       $SG49147                   000000018001000c     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000010       $SG49153                   0000000180010010     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000014       $SG49154                   0000000180010014     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000020       $SG49155                   0000000180010020     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000084       $SG49156                   0000000180010084     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000088       $SG49157                   0000000180010088     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000090       $SG49213                   0000000180010090     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:0000009c       $SG49214                   000000018001009c     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:000000a0       $SG49215                   00000001800100a0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:000000c0       $SG49221                   00000001800100c0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000110       $SG49230                   0000000180010110     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000138       $SG49243                   0000000180010138     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000148       $SG49282                   0000000180010148     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000160       $SG49335                   0000000180010160     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000178       $SG49363                   0000000180010178     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00000190       $SG49444                   0000000180010190     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:000001a0       $SG49446                   00000001800101a0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:000001b8       $SG49447                   00000001800101b8     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:000001d0       $SG49448                   00000001800101d0     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:000001e8       $SG48431                   00000001800101e8     Testing_cgxe_registry.obj
+ 0003:00000218       $SG48435                   0000000180010218     Testing_cgxe_registry.obj
+ 0003:00000258       $SG48440                   0000000180010258     Testing_cgxe_registry.obj
+ 0003:00000290       $SG48445                   0000000180010290     Testing_cgxe_registry.obj
+ 0003:000002c8       $SG48449                   00000001800102c8     Testing_cgxe_registry.obj
+ 0003:00000300       $SG48486                   0000000180010300     Testing_cgxe_registry.obj
+ 0003:00000308       $SG48488                   0000000180010308     Testing_cgxe_registry.obj
+ 0003:00000310       $SG48490                   0000000180010310     Testing_cgxe_registry.obj
+ 0003:0000031c       $SG48492                   000000018001031c     Testing_cgxe_registry.obj
+ 0003:00000328       $SG48494                   0000000180010328     Testing_cgxe_registry.obj
+ 0003:00000330       $SG48495                   0000000180010330     Testing_cgxe_registry.obj
+ 0003:00000338       $SG48496                   0000000180010338     Testing_cgxe_registry.obj
+ 0003:00000340       $SG48497                   0000000180010340     Testing_cgxe_registry.obj
+ 0003:0000034c       $SG48498                   000000018001034c     Testing_cgxe_registry.obj
+ 0003:00000358       $SG48499                   0000000180010358     Testing_cgxe_registry.obj
+ 0003:00000360       $SG48535                   0000000180010360     Testing_cgxe_registry.obj
+ 0003:00000390       $SG48546                   0000000180010390     Testing_cgxe_registry.obj
+ 0003:000003c0       $SG48560                   00000001800103c0     Testing_cgxe_registry.obj
+ 0003:000003d8       $SG48574                   00000001800103d8     Testing_cgxe_registry.obj
+ 0003:000003f0       $SG48588                   00000001800103f0     Testing_cgxe_registry.obj
+ 0003:00000400       $SG48590                   0000000180010400     Testing_cgxe_registry.obj
+ 0003:00000410       $SG48592                   0000000180010410     Testing_cgxe_registry.obj
+ 0003:00000420       $SG48594                   0000000180010420     Testing_cgxe_registry.obj
+ 0003:00000430       $SG48596                   0000000180010430     Testing_cgxe_registry.obj
+ 0003:00000448       $SG48598                   0000000180010448     Testing_cgxe_registry.obj
+ 0003:00000460       $SG48609                   0000000180010460     Testing_cgxe_registry.obj
+ 0003:00000488       _sfcnName                  0000000180010488     Testing_cgxe_registry.obj
+ 0003:000004b0       $SG48624                   00000001800104b0     Testing_cgxe_registry.obj
+ 0003:00000530       $SG48628                   0000000180010530     Testing_cgxe_registry.obj
+ 0003:000005a8       $SG48933                   00000001800105a8     Testing_cgxe_registry.obj
+ 0003:000005b8       $SG48934                   00000001800105b8     Testing_cgxe_registry.obj
+ 0003:000005c8       $SG48946                   00000001800105c8     Testing_cgxe_registry.obj
+ 0003:000005d8       $SG49082                   00000001800105d8     Testing_cgxe_registry.obj
+ 0003:00000618       $SG49083                   0000000180010618     Testing_cgxe_registry.obj
+ 0003:00000628       $SG49084                   0000000180010628     Testing_cgxe_registry.obj
+ 0003:00000630       $SG49088                   0000000180010630     Testing_cgxe_registry.obj
+ 0003:00000678       $SG49089                   0000000180010678     Testing_cgxe_registry.obj
+ 0003:00000688       $SG49090                   0000000180010688     Testing_cgxe_registry.obj
+ 0003:00000690       $SG49091                   0000000180010690     Testing_cgxe_registry.obj
+ 0003:000006e8       $SG49092                   00000001800106e8     Testing_cgxe_registry.obj
+ 0003:000006f8       $SG49093                   00000001800106f8     Testing_cgxe_registry.obj
+ 0003:00000700       $SG49113                   0000000180010700     Testing_cgxe_registry.obj
+ 0003:00000740       $SG49114                   0000000180010740     Testing_cgxe_registry.obj
+ 0003:00000750       $SG49115                   0000000180010750     Testing_cgxe_registry.obj
+ 0003:00000760       $SG49119                   0000000180010760     Testing_cgxe_registry.obj
+ 0003:000007a8       $SG49120                   00000001800107a8     Testing_cgxe_registry.obj
+ 0003:000007b8       $SG49121                   00000001800107b8     Testing_cgxe_registry.obj
+ 0003:000007c0       $SG49122                   00000001800107c0     Testing_cgxe_registry.obj
+ 0003:00000818       $SG49123                   0000000180010818     Testing_cgxe_registry.obj
+ 0003:00000828       $SG49124                   0000000180010828     Testing_cgxe_registry.obj
+ 0003:00000830       $SG49143                   0000000180010830     Testing_cgxe_registry.obj
+ 0003:00000880       $SG49144                   0000000180010880     Testing_cgxe_registry.obj
+ 0003:00000890       $SG49145                   0000000180010890     Testing_cgxe_registry.obj
+ 0003:000008a0       $SG49154                   00000001800108a0     Testing_cgxe_registry.obj
+ 0003:00000900       $SG49155                   0000000180010900     Testing_cgxe_registry.obj
+ 0003:00000908       $SG49156                   0000000180010908     Testing_cgxe_registry.obj
+ 0003:00000910       $SG49165                   0000000180010910     Testing_cgxe_registry.obj
+ 0003:00000970       $SG49166                   0000000180010970     Testing_cgxe_registry.obj
+ 0003:00000978       $SG49167                   0000000180010978     Testing_cgxe_registry.obj
+ 0003:00000980       $SG49473                   0000000180010980     Testing_cgxe_registry.obj
+ 0003:00000a00       $SG49476                   0000000180010a00     Testing_cgxe_registry.obj
+ 0003:00000a80       $SG49481                   0000000180010a80     Testing_cgxe_registry.obj
+ 0003:00000b00       $SG49489                   0000000180010b00     Testing_cgxe_registry.obj
+ 0003:00000b70       $SG49762                   0000000180010b70     Testing_cgxe_registry.obj
+ 0003:00000bf0       $SG49767                   0000000180010bf0     Testing_cgxe_registry.obj
+ 0003:00000c68       $SG50091                   0000000180010c68     Testing_cgxe_registry.obj
+ 0003:00000c80       $SG50104                   0000000180010c80     Testing_cgxe_registry.obj
+ 0003:00000cf8       $SG50107                   0000000180010cf8     Testing_cgxe_registry.obj
+ 0003:00000cfc       $SG50159                   0000000180010cfc     Testing_cgxe_registry.obj
+ 0003:00000d04       $SG50160                   0000000180010d04     Testing_cgxe_registry.obj
+ 0003:00000d0c       $SG50161                   0000000180010d0c     Testing_cgxe_registry.obj
+ 0003:00000d20       $SG50162                   0000000180010d20     Testing_cgxe_registry.obj
+ 0003:00000da0       $SG50164                   0000000180010da0     Testing_cgxe_registry.obj
+ 0003:00000e1c       $SG50167                   0000000180010e1c     Testing_cgxe_registry.obj
+ 0003:00000e24       $SG50170                   0000000180010e24     Testing_cgxe_registry.obj
+ 0003:00000e2c       $SG50173                   0000000180010e2c     Testing_cgxe_registry.obj
+ 0003:00000e40       $SG50174                   0000000180010e40     Testing_cgxe_registry.obj
+ 0003:00000ec0       $SG50175                   0000000180010ec0     Testing_cgxe_registry.obj
+ 0003:00000ed0       $SG50177                   0000000180010ed0     Testing_cgxe_registry.obj
+ 0003:00000edc       $SG50179                   0000000180010edc     Testing_cgxe_registry.obj
+ 0003:00000ee4       $SG50181                   0000000180010ee4     Testing_cgxe_registry.obj
+ 0003:00000ef0       $SG50183                   0000000180010ef0     Testing_cgxe_registry.obj
+ 0003:00000efc       $SG50185                   0000000180010efc     Testing_cgxe_registry.obj
+ 0003:00000f00       $SG50188                   0000000180010f00     Testing_cgxe_registry.obj
+ 0003:00000fe8       $SG50298                   0000000180010fe8     Testing_cgxe_registry.obj
+ 0003:00001018       $SG50299                   0000000180011018     Testing_cgxe_registry.obj
+ 0003:00001028       $SG50300                   0000000180011028     Testing_cgxe_registry.obj
+ 0003:00001030       $SG50302                   0000000180011030     Testing_cgxe_registry.obj
+ 0003:00001068       $SG50303                   0000000180011068     Testing_cgxe_registry.obj
+ 0003:00001078       $SG50304                   0000000180011078     Testing_cgxe_registry.obj
+ 0003:00001080       $SG50307                   0000000180011080     Testing_cgxe_registry.obj
+ 0003:000010b8       $SG50308                   00000001800110b8     Testing_cgxe_registry.obj
+ 0003:000010c8       $SG50309                   00000001800110c8     Testing_cgxe_registry.obj
+ 0003:000010d0       $SG50311                   00000001800110d0     Testing_cgxe_registry.obj
+ 0003:00001108       $SG50312                   0000000180011108     Testing_cgxe_registry.obj
+ 0003:00001118       $SG50313                   0000000180011118     Testing_cgxe_registry.obj
+ 0003:00001120       $SG50315                   0000000180011120     Testing_cgxe_registry.obj
+ 0003:00001158       $SG50316                   0000000180011158     Testing_cgxe_registry.obj
+ 0003:00001168       $SG50317                   0000000180011168     Testing_cgxe_registry.obj
+ 0003:00001170       $SG50320                   0000000180011170     Testing_cgxe_registry.obj
+ 0003:00001180       $SG50322                   0000000180011180     Testing_cgxe_registry.obj
+ 0003:00001198       $SG50323                   0000000180011198     Testing_cgxe_registry.obj
+ 0003:000011d0       $SG50324                   00000001800111d0     Testing_cgxe_registry.obj
+ 0003:000011e0       $SG50325                   00000001800111e0     Testing_cgxe_registry.obj
+ 0003:000011e8       $SG50456                   00000001800111e8     Testing_cgxe_registry.obj
+ 0003:00001210       $SG50457                   0000000180011210     Testing_cgxe_registry.obj
+ 0003:000012a0       $SG50463                   00000001800112a0     Testing_cgxe_registry.obj
+ 0003:000012c0       $SG50464                   00000001800112c0     Testing_cgxe_registry.obj
+ 0003:00001350       $SG50470                   0000000180011350     Testing_cgxe_registry.obj
+ 0003:00001370       $SG50471                   0000000180011370     Testing_cgxe_registry.obj
+ 0003:00001400       $SG50477                   0000000180011400     Testing_cgxe_registry.obj
+ 0003:00001420       $SG50478                   0000000180011420     Testing_cgxe_registry.obj
+ 0003:000014b0       $SG50484                   00000001800114b0     Testing_cgxe_registry.obj
+ 0003:000014d0       $SG50485                   00000001800114d0     Testing_cgxe_registry.obj
+ 0003:00001560       $SG50489                   0000000180011560     Testing_cgxe_registry.obj
+ 0003:00001580       $SG50490                   0000000180011580     Testing_cgxe_registry.obj
+ 0003:00001610       $SG50494                   0000000180011610     Testing_cgxe_registry.obj
+ 0003:00001640       $SG50495                   0000000180011640     Testing_cgxe_registry.obj
+ 0003:000016d0       $SG50499                   00000001800116d0     Testing_cgxe_registry.obj
+ 0003:00001700       $SG50500                   0000000180011700     Testing_cgxe_registry.obj
+ 0003:00001790       $SG50504                   0000000180011790     Testing_cgxe_registry.obj
+ 0003:000017b0       $SG50505                   00000001800117b0     Testing_cgxe_registry.obj
+ 0003:00001840       $SG50509                   0000000180011840     Testing_cgxe_registry.obj
+ 0003:00001860       $SG50510                   0000000180011860     Testing_cgxe_registry.obj
+ 0003:000018f0       $SG50514                   00000001800118f0     Testing_cgxe_registry.obj
+ 0003:00001910       $SG50515                   0000000180011910     Testing_cgxe_registry.obj
+ 0003:000019a0       $SG50519                   00000001800119a0     Testing_cgxe_registry.obj
+ 0003:000019c0       $SG50520                   00000001800119c0     Testing_cgxe_registry.obj
+ 0003:00001a50       $SG50524                   0000000180011a50     Testing_cgxe_registry.obj
+ 0003:00001a70       $SG50525                   0000000180011a70     Testing_cgxe_registry.obj
+ 0003:00001b00       $SG50529                   0000000180011b00     Testing_cgxe_registry.obj
+ 0003:00001b20       $SG50530                   0000000180011b20     Testing_cgxe_registry.obj
+ 0003:00001bb0       $SG50534                   0000000180011bb0     Testing_cgxe_registry.obj
+ 0003:00001bd0       $SG50535                   0000000180011bd0     Testing_cgxe_registry.obj
+ 0003:00001c60       $SG50539                   0000000180011c60     Testing_cgxe_registry.obj
+ 0003:00001c80       $SG50540                   0000000180011c80     Testing_cgxe_registry.obj
+ 0003:00001d10       $SG50544                   0000000180011d10     Testing_cgxe_registry.obj
+ 0003:00001d30       $SG50545                   0000000180011d30     Testing_cgxe_registry.obj
+ 0003:00001dc0       $SG50550                   0000000180011dc0     Testing_cgxe_registry.obj
+ 0003:00001de0       $SG50551                   0000000180011de0     Testing_cgxe_registry.obj
+ 0003:00001e70       $SG50556                   0000000180011e70     Testing_cgxe_registry.obj
+ 0003:00001e90       $SG50557                   0000000180011e90     Testing_cgxe_registry.obj
+ 0003:00001f20       $SG50561                   0000000180011f20     Testing_cgxe_registry.obj
+ 0003:00001f30       $SG50562                   0000000180011f30     Testing_cgxe_registry.obj
+ 0003:00001fc0       $SG50566                   0000000180011fc0     Testing_cgxe_registry.obj
+ 0003:00001fe0       $SG50567                   0000000180011fe0     Testing_cgxe_registry.obj
+ 0003:00002070       $SG50575                   0000000180012070     Testing_cgxe_registry.obj
+ 0003:00002080       $SG50576                   0000000180012080     Testing_cgxe_registry.obj
+ 0003:00002110       $SG50580                   0000000180012110     Testing_cgxe_registry.obj
+ 0003:00002190       $SG50582                   0000000180012190     Testing_cgxe_registry.obj
+ 0003:00002210       $SG50586                   0000000180012210     Testing_cgxe_registry.obj
+ 0003:00002290       $SG50609                   0000000180012290     Testing_cgxe_registry.obj
+ 0003:000023a8       $SG50617                   00000001800123a8     Testing_cgxe_registry.obj
+ 0003:000023b8       $SG50624                   00000001800123b8     Testing_cgxe_registry.obj
+ 0003:000023c8       $SG50632                   00000001800123c8     Testing_cgxe_registry.obj
+ 0003:000023d8       $SG50639                   00000001800123d8     Testing_cgxe_registry.obj
+ 0003:000023e8       $SG50647                   00000001800123e8     Testing_cgxe_registry.obj
+ 0003:000023f8       $SG50654                   00000001800123f8     Testing_cgxe_registry.obj
+ 0003:00002408       $SG50660                   0000000180012408     Testing_cgxe_registry.obj
+ 0003:00002428       $SG50670                   0000000180012428     Testing_cgxe_registry.obj
+ 0003:00002458       $SG50671                   0000000180012458     Testing_cgxe_registry.obj
+ 0003:00002460       $SG50672                   0000000180012460     Testing_cgxe_registry.obj
+ 0003:00002468       $SG50682                   0000000180012468     Testing_cgxe_registry.obj
+ 0003:000024a0       $SG50683                   00000001800124a0     Testing_cgxe_registry.obj
+ 0003:000024a8       $SG50684                   00000001800124a8     Testing_cgxe_registry.obj
+ 0003:00002544       $SG49145                   0000000180012544     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00002545       $SG49172                   0000000180012545     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00002546       $SG49216                   0000000180012546     m_YQg0KPp9US1iRXoVC2Rf7F.obj
+ 0003:00002548       $SG50155                   0000000180012548     Testing_cgxe_registry.obj
+ 0003:0000254a       ?warningGuard@?1??ssGetRootSS@@9@9 000000018001254a     Testing_cgxe_registry.obj
+ 0003:0000254b       ?warningGuard@?1??ssGetParentSS@@9@9 000000018001254b     Testing_cgxe_registry.obj
+ 0003:00002550       GS_ExceptionRecord         0000000180012550     MSVCRT:gs_report.obj
+ 0003:000025f0       GS_ContextRecord           00000001800125f0     MSVCRT:gs_report.obj
+ 0003:00002ac0       ?__proc_attached@@3HA      0000000180012ac0     MSVCRT:dll_dllmain.obj
+ 0003:00002b00       ?is_initialized_as_dll@@3_NA 0000000180012b00     MSVCRT:utility.obj
+ 0003:00002b01       ?module_local_atexit_table_initialized@@3_NA 0000000180012b01     MSVCRT:utility.obj
+ 0003:00002b08       ?module_local_atexit_table@@3U_onexit_table_t@@A 0000000180012b08     MSVCRT:utility.obj
+ 0003:00002b20       ?module_local_at_quick_exit_table@@3U_onexit_table_t@@A 0000000180012b20     MSVCRT:utility.obj

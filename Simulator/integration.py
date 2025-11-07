@@ -5,5 +5,5 @@ compare_agents = SourceFileLoader('compare_agents', 'PathPlanning\compare_agents
 compare_agents.testing()
 
 def testing():
-    return testing()
+    return compare_agents.testing()
 
