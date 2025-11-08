@@ -4,16 +4,23 @@ from core import DroneState
 
 
 class DynamicProjections:
-    def __init__(self, air_resistance_coeff: float = 0.0):
+    def __init__(self, air_resistance_coeff: float = 0.0,
+                 gravity: float = 9.81,
+                 wind_velocity: np.ndarray = np.array([0.0, 0.0, 0.0])):
         """
-        Initialize the DynamicProjections system for 2D drone trajectory 
+        Initialize the DynamicProjections system for 3D drone trajectory
         planning
 
         Args:
-            air_resistance_coeff: Air resistance coefficient, set to 0 to 
+            air_resistance_coeff: Air resistance coefficient, set to 0 to
             disable air resistance.
+            gravity: Gravitational acceleration in m/s^2 (default: 9.81)
+            wind_velocity: Wind velocity vector [vx, vy, vz] in m/s
+            (default: [0, 0, 0])
         """
         self.air_resistance_coeff = air_resistance_coeff
+        self.gravity = gravity
+        self.wind_velocity = np.array(wind_velocity)
         self.state_history: List[DroneState] = []
 
     def predict_position(self, state: DroneState, dt: float) -> np.ndarray:
@@ -26,7 +33,7 @@ class DynamicProjections:
             state: current drone state containing pos, vel, & acc
             dt: Time step (seconds) for prediction
         Returns:
-           np.ndarry: Predicted position vector [x y] (meters)
+           np.ndarry: Predicted position vector [x y z] (meters)
 
         """
         pos = state.position()
@@ -38,7 +45,7 @@ class DynamicProjections:
 
     def predict_velocity(self, state: DroneState, dt: float) -> np.ndarray:
         """
-        Predict future velocity considering air resistance
+        Predict future velocity considering air resistance, wind, and gravity
         https://en.wikipedia.org/wiki/Equations_of_motion
         vel = vel_0 + acc * dt
 
@@ -46,15 +53,22 @@ class DynamicProjections:
             state: current drone state containing vel, acc
             dt: Time step (seconds) for prediction
         Returns:
-           np.ndarry: Predicted velocity vector [vx vy] (m/s)
+           np.ndarry: Predicted velocity vector [vx vy vz] (m/s)
 
         """
 
         vel = state.velocity()
         acc = state.acceleration()
 
+        gravity_acc = np.array([0.0, 0.0, -self.gravity])
+        acc = acc + gravity_acc
+
+        relative_vel = vel - self.wind_velocity
+
         if self.air_resistance_coeff > 0:
-            drag_force = -self.air_resistance_coeff * vel * np.linalg.norm(vel)
+            drag_magnitude = (self.air_resistance_coeff *
+                              np.linalg.norm(relative_vel))
+            drag_force = -drag_magnitude * relative_vel
             acc = acc + drag_force
 
         predicted_vel = vel + acc * dt
@@ -64,22 +78,38 @@ class DynamicProjections:
                              force: Optional[np.ndarray] = None) -> np.ndarray:
 
         """
-        Predict future acc from applied forces (f = ma)
+        Predict future acc from applied forces including gravity and drag
+        (f = ma)
 
         Args:
             state: current drone state containing vel, acc
             force: Optional external force applied to vehicle
-                if None, current acceleration is returned
+                if None, returns zero acceleration with gravity and drag only
 
         Returns:
-           np.ndarry: Predicted acceleration vector [ax ay] m/s^2
+           np.ndarry: Predicted acceleration vector [ax ay az] m/s^2
 
         """
+        # Use provided force or zero
         if force is None:
-            return state.acceleration()
+            force = np.zeros(3)
 
-        # For 2D drone, assuming unit mass or force already accounts for mass
-        predicted_acc = force
+        # Add gravity (negative z-direction)
+        gravity_force = np.array([0.0, 0.0, -self.gravity])
+
+        # Calculate relative velocity for drag
+        relative_vel = state.velocity() - self.wind_velocity
+
+        # Add air resistance based on relative velocity
+        if self.air_resistance_coeff > 0:
+            drag_magnitude = (self.air_resistance_coeff *
+                              np.linalg.norm(relative_vel))
+            drag_force = -drag_magnitude * relative_vel
+        else:
+            drag_force = np.zeros(3)
+
+        # Total acceleration (assuming unit mass or forces account for mass)
+        predicted_acc = force + gravity_force + drag_force
         return predicted_acc
 
     def predict_state(self, state: DroneState, dt: float,
@@ -93,7 +123,7 @@ class DynamicProjections:
         Args:
             state: Current drone state to predict from
             dt: Time step in seconds for prediction
-            applied_force: Optional external force vector [Fx, Fy] to
+            applied_force: Optional external force vector [Fx, Fy, Fz] to
             apply during the time step
 
         Returns:
@@ -111,10 +141,13 @@ class DynamicProjections:
         predicted_state = DroneState(
             x=new_pos[0],
             y=new_pos[1],
+            z=new_pos[2],
             vx=new_vel[0],
             vy=new_vel[1],
+            vz=new_vel[2],
             ax=new_acc[0],
             ay=new_acc[1],
+            az=new_acc[2],
             theta=state.theta,
             theta_dot=state.theta_dot,
             timestamp=state.timestamp + dt
@@ -166,22 +199,39 @@ class DynamicProjections:
         """
         Calculate time derivatives of position and velocity for ODE
         integration. This function provides the right-hand side for
-        the system of ODEs: dx/dt = v, dv/dt = a = F
+        the system of ODEs: dx/dt = v, dv/dt = a = F + gravity
 
         Args:
             s: Current drone state
             t: Current time in seconds
             force_func: Optional function that takes (state, time) and returns
-            force vector [Fx, Fy]. If None, zero force is assumed.
+            force vector [Fx, Fy, Fz]. If None, zero force is assumed.
 
         Returns:
             Tuple[np.ndarray, np.ndarray]: (velocity, acceleration) where:
-                - velocity: current velocity vector [vx, vy]
-                - acceleration: acceleration vector [ax, ay]
+                - velocity: current velocity vector [vx, vy, vz]
+                - acceleration: acceleration vector [ax, ay, az]
 
         """
-        force = force_func(s, t) if force_func else np.zeros(2)
-        acc = force
+        # Get control force
+        force = force_func(s, t) if force_func else np.zeros(3)
+        
+        # Add gravity (negative z-direction)
+        gravity_force = np.array([0.0, 0.0, -self.gravity])
+        
+        # Calculate relative velocity for drag
+        relative_vel = s.velocity() - self.wind_velocity
+        
+        # Add air resistance based on relative velocity
+        if self.air_resistance_coeff > 0:
+            drag_force = (-self.air_resistance_coeff * relative_vel *
+                          np.linalg.norm(relative_vel))
+        else:
+            drag_force = np.zeros(3)
+
+        # Total acceleration
+        acc = force + gravity_force + drag_force
+
         return s.velocity(), acc
 
     def runge_kutta_4_step(self, state: DroneState, dt: float,
@@ -194,7 +244,7 @@ class DynamicProjections:
             state: Current drone state to integrate from
             dt: Time step in seconds for integration
             force_func: Optional function that takes (state, time) and returns
-                force vector [Fx, Fy]. If None, zero force is assumed.
+                force vector [Fx, Fy, Fz]. If None, zero force is assumed.
 
         Returns:
             DroneState: New drone state after RK4 integration step
@@ -204,9 +254,11 @@ class DynamicProjections:
         mid_state1 = DroneState(
             x=state.x + 0.5 * k1_vel[0] * dt,
             y=state.y + 0.5 * k1_vel[1] * dt,
+            z=state.z + 0.5 * k1_vel[2] * dt,
             vx=state.vx + 0.5 * k1_acc[0] * dt,
             vy=state.vy + 0.5 * k1_acc[1] * dt,
-            ax=state.ax, ay=state.ay,
+            vz=state.vz + 0.5 * k1_acc[2] * dt,
+            ax=state.ax, ay=state.ay, az=state.az,
             theta=state.theta, theta_dot=state.theta_dot,
             timestamp=state.timestamp + 0.5 * dt
         )
@@ -217,9 +269,11 @@ class DynamicProjections:
         mid_state2 = DroneState(
             x=state.x + 0.5 * k2_vel[0] * dt,
             y=state.y + 0.5 * k2_vel[1] * dt,
+            z=state.z + 0.5 * k2_vel[2] * dt,
             vx=state.vx + 0.5 * k2_acc[0] * dt,
             vy=state.vy + 0.5 * k2_acc[1] * dt,
-            ax=state.ax, ay=state.ay,
+            vz=state.vz + 0.5 * k2_acc[2] * dt,
+            ax=state.ax, ay=state.ay, az=state.az,
             theta=state.theta, theta_dot=state.theta_dot,
             timestamp=state.timestamp + 0.5 * dt
         )
@@ -229,9 +283,11 @@ class DynamicProjections:
         end_state = DroneState(
             x=state.x + k3_vel[0] * dt,
             y=state.y + k3_vel[1] * dt,
+            z=state.z + k3_vel[2] * dt,
             vx=state.vx + k3_acc[0] * dt,
             vy=state.vy + k3_acc[1] * dt,
-            ax=state.ax, ay=state.ay,
+            vz=state.vz + k3_acc[2] * dt,
+            ax=state.ax, ay=state.ay, az=state.az,
             theta=state.theta, theta_dot=state.theta_dot,
             timestamp=state.timestamp + dt
         )
@@ -244,9 +300,9 @@ class DynamicProjections:
                                                    + 2*k3_acc + k4_acc)
 
         return DroneState(
-            x=new_pos[0], y=new_pos[1],
-            vx=new_vel[0], vy=new_vel[1],
-            ax=k4_acc[0], ay=k4_acc[1],
+            x=new_pos[0], y=new_pos[1], z=new_pos[2],
+            vx=new_vel[0], vy=new_vel[1], vz=new_vel[2],
+            ax=k4_acc[0], ay=k4_acc[1], az=k4_acc[2],
             theta=state.theta, theta_dot=state.theta_dot,
             timestamp=state.timestamp + dt
         )
@@ -262,7 +318,7 @@ class DynamicProjections:
 
         Args:
             state: Starting drone state
-            target_pos: Target position vector [x, y] in meters
+            target_pos: Target position vector [x, y, z] in meters
             max_time: Maximum time in seconds to simulate (default: 10.0)
 
         Returns:
