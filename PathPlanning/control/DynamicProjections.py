@@ -1,10 +1,12 @@
 import numpy as np
 from typing import Tuple, Optional, List
 from core import DroneState
+from core.Shape import DroneShape
 
 
 class DynamicProjections:
-    def __init__(self, air_resistance_coeff: float = 0.0,
+    def __init__(self, drone_shape: DroneShape,
+                 air_resistance_coeff: float = 0.0,
                  gravity: float = 9.81,
                  wind_velocity: np.ndarray = np.array([0.0, 0.0, 0.0])):
         """
@@ -12,12 +14,15 @@ class DynamicProjections:
         planning
 
         Args:
+            drone_shape: DroneShape instance defining the drone's physical
+            properties
             air_resistance_coeff: Air resistance coefficient, set to 0 to
             disable air resistance.
             gravity: Gravitational acceleration in m/s^2 (default: 9.81)
             wind_velocity: Wind velocity vector [vx, vy, vz] in m/s
             (default: [0, 0, 0])
         """
+        self.shape = drone_shape
         self.air_resistance_coeff = air_resistance_coeff
         self.gravity = gravity
         self.wind_velocity = np.array(wind_velocity)
@@ -36,11 +41,8 @@ class DynamicProjections:
            np.ndarry: Predicted position vector [x y z] (meters)
 
         """
-        pos = state.position()
-        vel = state.velocity()
-        acc = state.acceleration()
-
-        predicted_pos = pos + vel * dt + 0.5 * acc * (dt ** 2)
+        predicted_pos = (state.position + state.velocity * dt +
+                         0.5 * state.acceleration * (dt ** 2))
         return predicted_pos
 
     def predict_velocity(self, state: DroneState, dt: float) -> np.ndarray:
@@ -56,14 +58,10 @@ class DynamicProjections:
            np.ndarry: Predicted velocity vector [vx vy vz] (m/s)
 
         """
-
-        vel = state.velocity()
-        acc = state.acceleration()
-
         gravity_acc = np.array([0.0, 0.0, -self.gravity])
-        acc = acc + gravity_acc
+        acc = state.acceleration + gravity_acc
 
-        relative_vel = vel - self.wind_velocity
+        relative_vel = state.velocity - self.wind_velocity
 
         if self.air_resistance_coeff > 0:
             drag_magnitude = (self.air_resistance_coeff *
@@ -71,7 +69,7 @@ class DynamicProjections:
             drag_force = -drag_magnitude * relative_vel
             acc = acc + drag_force
 
-        predicted_vel = vel + acc * dt
+        predicted_vel = state.velocity + acc * dt
         return predicted_vel
 
     def predict_acceleration(self, state: DroneState,
@@ -98,7 +96,7 @@ class DynamicProjections:
         gravity_force = np.array([0.0, 0.0, -self.gravity])
 
         # Calculate relative velocity for drag
-        relative_vel = state.velocity() - self.wind_velocity
+        relative_vel = state.velocity - self.wind_velocity
 
         # Add air resistance based on relative velocity
         if self.air_resistance_coeff > 0:
@@ -118,7 +116,8 @@ class DynamicProjections:
         """
         Predict complete drone state after a time step dt.
         Integrates position, velocity, and acceleration forward in time
-        using Euler integration method.
+        using Euler integration method. Maintains drone shape properties
+        and rotation angle.
 
         Args:
             state: Current drone state to predict from
@@ -133,21 +132,16 @@ class DynamicProjections:
         if applied_force is not None:
             new_acc = self.predict_acceleration(state, applied_force)
         else:
-            new_acc = state.acceleration()
+            new_acc = state.acceleration.copy()
 
         new_vel = self.predict_velocity(state, dt)
         new_pos = self.predict_position(state, dt)
 
         predicted_state = DroneState(
-            x=new_pos[0],
-            y=new_pos[1],
-            z=new_pos[2],
-            vx=new_vel[0],
-            vy=new_vel[1],
-            vz=new_vel[2],
-            ax=new_acc[0],
-            ay=new_acc[1],
-            az=new_acc[2],
+            position=new_pos,
+            velocity=new_vel,
+            acceleration=new_acc,
+            alpha=state.alpha.copy(),
             theta=state.theta,
             theta_dot=state.theta_dot,
             timestamp=state.timestamp + dt
@@ -215,13 +209,13 @@ class DynamicProjections:
         """
         # Get control force
         force = force_func(s, t) if force_func else np.zeros(3)
-        
+
         # Add gravity (negative z-direction)
         gravity_force = np.array([0.0, 0.0, -self.gravity])
-        
+
         # Calculate relative velocity for drag
-        relative_vel = s.velocity() - self.wind_velocity
-        
+        relative_vel = s.velocity - self.wind_velocity
+
         # Add air resistance based on relative velocity
         if self.air_resistance_coeff > 0:
             drag_force = (-self.air_resistance_coeff * relative_vel *
@@ -232,7 +226,7 @@ class DynamicProjections:
         # Total acceleration
         acc = force + gravity_force + drag_force
 
-        return s.velocity(), acc
+        return s.velocity, acc
 
     def runge_kutta_4_step(self, state: DroneState, dt: float,
                            force_func: Optional[callable] = None
@@ -252,14 +246,12 @@ class DynamicProjections:
         k1_vel, k1_acc = self.derivatives(state, state.timestamp, force_func)
 
         mid_state1 = DroneState(
-            x=state.x + 0.5 * k1_vel[0] * dt,
-            y=state.y + 0.5 * k1_vel[1] * dt,
-            z=state.z + 0.5 * k1_vel[2] * dt,
-            vx=state.vx + 0.5 * k1_acc[0] * dt,
-            vy=state.vy + 0.5 * k1_acc[1] * dt,
-            vz=state.vz + 0.5 * k1_acc[2] * dt,
-            ax=state.ax, ay=state.ay, az=state.az,
-            theta=state.theta, theta_dot=state.theta_dot,
+            position=state.position + 0.5 * k1_vel * dt,
+            velocity=state.velocity + 0.5 * k1_acc * dt,
+            acceleration=state.acceleration.copy(),
+            alpha=state.alpha.copy(),
+            theta=state.theta,
+            theta_dot=state.theta_dot,
             timestamp=state.timestamp + 0.5 * dt
         )
 
@@ -267,43 +259,41 @@ class DynamicProjections:
                                           force_func)
 
         mid_state2 = DroneState(
-            x=state.x + 0.5 * k2_vel[0] * dt,
-            y=state.y + 0.5 * k2_vel[1] * dt,
-            z=state.z + 0.5 * k2_vel[2] * dt,
-            vx=state.vx + 0.5 * k2_acc[0] * dt,
-            vy=state.vy + 0.5 * k2_acc[1] * dt,
-            vz=state.vz + 0.5 * k2_acc[2] * dt,
-            ax=state.ax, ay=state.ay, az=state.az,
-            theta=state.theta, theta_dot=state.theta_dot,
+            position=state.position + 0.5 * k2_vel * dt,
+            velocity=state.velocity + 0.5 * k2_acc * dt,
+            acceleration=state.acceleration.copy(),
+            alpha=state.alpha.copy(),
+            theta=state.theta,
+            theta_dot=state.theta_dot,
             timestamp=state.timestamp + 0.5 * dt
         )
         k3_vel, k3_acc = self.derivatives(mid_state2, mid_state2.timestamp,
                                           force_func)
 
         end_state = DroneState(
-            x=state.x + k3_vel[0] * dt,
-            y=state.y + k3_vel[1] * dt,
-            z=state.z + k3_vel[2] * dt,
-            vx=state.vx + k3_acc[0] * dt,
-            vy=state.vy + k3_acc[1] * dt,
-            vz=state.vz + k3_acc[2] * dt,
-            ax=state.ax, ay=state.ay, az=state.az,
-            theta=state.theta, theta_dot=state.theta_dot,
+            position=state.position + k3_vel * dt,
+            velocity=state.velocity + k3_acc * dt,
+            acceleration=state.acceleration.copy(),
+            alpha=state.alpha.copy(),
+            theta=state.theta,
+            theta_dot=state.theta_dot,
             timestamp=state.timestamp + dt
         )
         k4_vel, k4_acc = self.derivatives(end_state, end_state.timestamp,
                                           force_func)
 
-        new_pos = state.position() + (dt / 6.0) * (k1_vel + 2*k2_vel
-                                                   + 2*k3_vel + k4_vel)
-        new_vel = state.velocity() + (dt / 6.0) * (k1_acc + 2*k2_acc
-                                                   + 2*k3_acc + k4_acc)
+        new_pos = (state.position +
+                   (dt / 6.0) * (k1_vel + 2*k2_vel + 2*k3_vel + k4_vel))
+        new_vel = (state.velocity +
+                   (dt / 6.0) * (k1_acc + 2*k2_acc + 2*k3_acc + k4_acc))
 
         return DroneState(
-            x=new_pos[0], y=new_pos[1], z=new_pos[2],
-            vx=new_vel[0], vy=new_vel[1], vz=new_vel[2],
-            ax=k4_acc[0], ay=k4_acc[1], az=k4_acc[2],
-            theta=state.theta, theta_dot=state.theta_dot,
+            position=new_pos,
+            velocity=new_vel,
+            acceleration=k4_acc,
+            alpha=state.alpha.copy(),
+            theta=state.theta,
+            theta_dot=state.theta_dot,
             timestamp=state.timestamp + dt
         )
 
@@ -329,11 +319,11 @@ class DynamicProjections:
 
         dt = 0.1
         current_state = state
-        min_distance = np.linalg.norm(state.position() - target_pos)
+        min_distance = np.linalg.norm(state.position - target_pos)
 
         for t in np.arange(0, max_time, dt):
             current_state = self.predict_state(current_state, dt)
-            distance = np.linalg.norm(current_state.position() - target_pos)
+            distance = np.linalg.norm(current_state.position - target_pos)
 
             if distance < 0.1:
                 return t + dt
