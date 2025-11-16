@@ -1,1 +1,0 @@
-web('quadcopter_package_delivery_weather.html')
