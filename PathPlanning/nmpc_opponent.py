@@ -25,6 +25,8 @@ class NMPCOpponent:
         """
         x, y, z, vx, vy, vz = state
         ax, ay, az = control
+        x, y, z, vx, vy, vz = state
+        ax, ay, az = control
 
         # propagate position
         x_next = x + vx * self.dt
@@ -34,6 +36,7 @@ class NMPCOpponent:
         # propagate velocity
         vx_next = vx + ax * self.dt
         vy_next = vy + ay * self.dt
+        vz_next = vz + az * self.dt
         vz_next = vz + az * self.dt
 
         return np.array([x_next, y_next, z_next, vx_next, vy_next, vz_next])
@@ -46,6 +49,7 @@ class NMPCOpponent:
         total_cost = 0.0
 
         for t in range(self.prediction_horizon):
+            control = controls[t * 3:(t + 1) * 3]
             control = controls[t * 3:(t + 1) * 3]
             state = self.dynamics(state, control)
 
