@@ -1,9 +1,14 @@
 import numpy as np
 
-class DynamicRoleSwitching2D:
+class DynamicRoleSwitching3D:
     """
-    2D version of dynamic role-switching potential function (G_O).
-    Used for competitive drone racing or autonomous vehicle pursuit/avoidance in 2D.
+    3D-capable dynamic role-switching potential function (G_O).
+
+    NOTE: This class keeps the original name `DynamicRoleSwitching2D` so
+    existing imports remain valid, but the internal path and computations
+    operate in 3D (x, y, z). The methods remain signature-compatible with
+    prior 2D code — they return/accept numpy arrays of length 2 or 3 as
+    appropriate. Use the first two components for 2D-only code paths.
     """
 
     def __init__(self, alpha=1.0, beta=4.0, gamma=5.0, delta_1=-0.5, delta_2=-1.0):
@@ -16,10 +21,18 @@ class DynamicRoleSwitching2D:
     @staticmethod
     def path_function(theta):
         """
-        Compute 2D path position at parameter theta.
-        r(theta) = [6*sin(theta), 3*sin(2*theta)]
+        Compute 3D path position at parameter theta.
+
+        r(theta) = [6*sin(theta), 3*sin(2*theta), 6*sin(theta/2)]
+
+        Returns a numpy array of shape (3,) for scalar theta or (3, n)
+        for an array of theta values.
         """
-        return np.array([6 * np.sin(theta), 3 * np.sin(2 * theta)])
+        return np.array([
+            6 * np.sin(theta),
+            3 * np.sin(2 * theta),
+            6 * np.sin(theta / 2)
+        ])
 
     def compute_theta_delta(self, theta_op, theta_d):
         """Difference in path parameter (who’s ahead)."""
@@ -27,7 +40,7 @@ class DynamicRoleSwitching2D:
 
     def compute_deviation_difference(self, p_d, theta_d, p_op, theta_op):
         """
-        Compute the deviation difference R between ego and opponent drones in 2D.
+        Compute the deviation difference R between ego and opponent drones in 3D.
         R = ||(p_op - r(theta_op)) - (p_d - r(theta_d))||
         """
         r_d = self.path_function(theta_d)
@@ -71,3 +84,4 @@ class DynamicRoleSwitching2D:
             'deviation_term': deviation_term,
             'mode': mode
         }
+
