@@ -243,7 +243,8 @@ class NRHDGController:
                 objective_u, u,
                 method="SLSQP",
                 bounds=thrust_bounds,
-                options={"maxiter": 20, "ftol": 1e-3, "disp": False})
+                options={"maxiter": 20, "ftol": 1e-3, "disp": False}
+            )
             u = res_u.x
 
             # --- Maximize wrt v (opponent) -> minimize negative objective ---
